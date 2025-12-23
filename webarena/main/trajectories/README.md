@@ -4,4 +4,4 @@ Go to `https://mahirlabibdihan.github.io/WebOperator-Experiments/webarena/main/t
 
 >*Replace `<id>` with the task id you want to view.*
 
-For example, to view the trajectory for task 42, go to https://mahirlabibdihan.github.io/WebOperator-Experiments/webarena/main/trajectories/html/task_42.html.
+For example, to view the trajectory for task 421, go to https://mahirlabibdihan.github.io/WebOperator-Experiments/webarena/main/trajectories/html/task_421.html.
