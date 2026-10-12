@@ -1,0 +1,1233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>What is the duration required to first walk from Massachusetts Institute of Technology to Harvard University, and then drive to Boston Logan International Airport?</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/12-snapshot-validated-backtracking/tasks/task_82/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the OpenStreetMap home interface. A search textbox (`bid: 2`) is available to type in queries and a &quot;Go&quot; button (`bid: 3`) for executing searches. There is also a link (`bid: 4`) labeled &quot;Find directions between two points,&quot; which appears to lead to a directions feature where users can calculate travel times and routes between locations.
+
+No specific content related to the user&#x27;s goal (travel duration and route information) is currently presented on this page. However, the interface provides functionality to likely retrieve the required data for completing the goal, particularly by navigating to the directions feature.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To determine the duration for walking from MIT to Harvard University and then driving to Boston Logan International Airport, calculating routes and travel times is essential. The &quot;Find directions between two points&quot; feature (link `bid: 4`) seems to be the appropriate starting point to achieve this. Navigating there is the logical next step.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('4')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions>http://10.141.10.6:3000/directions</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[25] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[26] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[27] button &#x27;&#x27;
+			[28] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[30] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[31] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[32] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[33] option &#x27;Car (OSRM)&#x27;, selected=True
+			[34] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[21] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[22] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[24] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/12-snapshot-validated-backtracking/tasks/task_82/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the &quot;Directions&quot; feature of OpenStreetMap. It allows users to input origin and destination points, select modes of transportation, and calculate routes. Key interactive elements include:
+1. Textbox labeled &quot;From&quot; (`bid: 2`) for entering the starting location.
+2. Textbox labeled &quot;To&quot; (`bid: 3`) for entering the destination.
+3. Dropdown menu (`bid: 4`) to select the mode of transportation, defaulting to &quot;Car (OSRM)&quot; with other options like &quot;Bicycle (OSRM)&quot; and &quot;Foot (OSRM)&quot; available. 
+4. Button labeled &quot;Go&quot; (`bid: 5`) to process the directions query.
+5. Button labeled &quot;Reverse Directions&quot; (`bid: 6`) to switch the starting point and destination.
+
+No travel duration or route data has been provided yet since no queries have been executed, but the interface appears designed to generate such data.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To calculate the duration of travel for the required routes, the first step involves specifying the starting location. Since the initial goal requires walking from MIT to Harvard University, the &quot;From&quot; field (`bid: 2`) should be filled with &quot;Massachusetts Institute of Technology&quot;. This sets up the origin for the first leg of the journey.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'Massachusetts Institute of Technology', False)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions>http://10.141.10.6:3000/directions</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[25] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[26] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[27] button &#x27;&#x27;
+			[28] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[30] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[31] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Massachusetts Institute of Technology&#x27;, focused
+		StaticText &#x27;Massachusetts Institute of Technology&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[32] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[33] option &#x27;Car (OSRM)&#x27;, selected=True
+			[34] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[21] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[22] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[24] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/12-snapshot-validated-backtracking/tasks/task_82/screenshots/step_2.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the &quot;Directions&quot; interface of OpenStreetMap. The &quot;From&quot; field (`bid: 2`) has already been filled with &quot;Massachusetts Institute of Technology&quot;. The &quot;To&quot; field (`bid: 3`) remains empty, and the mode of transportation dropdown (`bid: 4`) is set to &quot;Car (OSRM)&quot; by default. This interface allows the user to specify origin and destination points and calculate routes by clicking the &quot;Go&quot; button (`bid: 5`). To accomplish the first part of the goal (walking from MIT to Harvard University), the destination (&quot;To&quot;) field should be filled with &quot;Harvard University,&quot; and the mode of transportation should be switched to &quot;Foot (OSRM).&quot;</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To determine the walking duration between MIT and Harvard University, it is necessary to input both the origin and the destination into their respective fields and set the mode of transportation to walking (Foot). Since the &quot;From&quot; field is already filled with &quot;Massachusetts Institute of Technology,&quot; the next logical step is to specify the destination as &quot;Harvard University.&quot;</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('3', 'Harvard University', False)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions>http://10.141.10.6:3000/directions</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[26] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[27] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[28] button &#x27;&#x27;
+			[29] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[30] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[31] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[32] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+		StaticText &#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Harvard University&#x27;, focused
+		StaticText &#x27;Harvard University&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[33] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[34] option &#x27;Car (OSRM)&#x27;, selected=True
+			[35] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[22] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[24] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[25] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[10] button &#x27;Marker&#x27;
+	[11] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[13] button &#x27;Show My Location&#x27;
+	[14] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[18] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[19] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[20] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[21] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/12-snapshot-validated-backtracking/tasks/task_82/screenshots/step_3.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the Directions interface of OpenStreetMap. The setup for calculating directions between two locations is mostly complete. The &quot;From&quot; textbox (`bid: 2`) contains &quot;Massachusetts Institute of Technology,&quot; and the &quot;To&quot; textbox (`bid: 3`) contains &quot;Harvard University.&quot; The transportation mode dropdown (`bid: 4`) is still set to &quot;Car (OSRM)&quot; by default. The dropdown has three options: &quot;Bicycle (OSRM),&quot; &quot;Car (OSRM),&quot; and &quot;Foot (OSRM).&quot; In order to calculate walking directions, the dropdown needs to be changed to &quot;Foot (OSRM).&quot; The page includes a &quot;Go&quot; button (`bid: 5`) to process the directions and retrieve the travel duration and route.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The first leg of the goal requires calculating the walking travel duration from MIT to Harvard University. To achieve this, the mode of transportation must be set to &quot;Foot (OSRM)&quot; in the dropdown menu before clicking the &quot;Go&quot; button to retrieve the route details. This step is essential for ensuring that the result is accurate for walking.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>select_option('4', 'Foot (OSRM)')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions>http://10.141.10.6:3000/directions</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[26] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[27] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[28] button &#x27;&#x27;
+			[29] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[30] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[31] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[32] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+		StaticText &#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Harvard University&#x27;, focused
+		StaticText &#x27;Harvard University&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Foot (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[33] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[34] option &#x27;Car (OSRM)&#x27;, selected=False
+			[35] option &#x27;Foot (OSRM)&#x27;, selected=True
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[22] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[24] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[25] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[10] button &#x27;Marker&#x27;
+	[11] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[13] button &#x27;Show My Location&#x27;
+	[14] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[18] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[19] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[20] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[21] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/12-snapshot-validated-backtracking/tasks/task_82/screenshots/step_4.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the Directions interface of OpenStreetMap. The &quot;From&quot; textbox (`bid: 2`) is filled with &quot;Massachusetts Institute of Technology,&quot; and the &quot;To&quot; textbox (`bid: 3`) is filled with &quot;Harvard University.&quot; The transportation mode dropdown (`bid: 4`) has been adjusted to &quot;Foot (OSRM),&quot; which is necessary for calculating walking directions. A &quot;Go&quot; button (`bid: 5`) is available to process the query and retrieve route details. No travel duration or route information is currently displayed.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>In the current setup, all parameters required for calculating walking directions from MIT to Harvard University are complete: origin location (&quot;From&quot;), destination location (&quot;To&quot;), and mode of transportation (&quot;Foot (OSRM)&quot;). The next logical step is to execute the query by clicking the &quot;Go&quot; button to fetch the walking duration and route details. This is critical to fulfilling the first subgoal.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('5')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#map=15/42.3631/-71.1118>http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#map=15/42.3631/-71.1118</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#map=15/42.3631/-71.1118&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[22] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=15/42.3631/-71.1118&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[23] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=15/42.3631/-71.1118&#x27;
+			[24] button &#x27;&#x27;
+			[25] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=15/42.3631/-71.1118&#x27;
+			[26] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=15/42.3631/-71.1118&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[27] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=15/42.3631/-71.1118&#x27;
+			[28] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+		StaticText &#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Harvard University, Hurlbut Street, Avon Hill, Cambridge, Middlesex County, Massachusetts, 02138, United States&#x27;
+		StaticText &#x27;Harvard University, Hurlbut Street, Avon Hill, Cambridge, Middlesex County, Massachusetts, 02138, United States&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Foot (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[29] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[30] option &#x27;Car (OSRM)&#x27;, selected=False
+			[31] option &#x27;Foot (OSRM)&#x27;, selected=True
+	[5] button &#x27;Go&#x27;, focused
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Directions&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Distance: 3.3km. Time: 0:45.&#x27;
+	table &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;1. Start on unnamed road&#x27;
+			cell &#x27;70m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;2. Turn left onto unnamed road&#x27;
+			cell &#x27;30m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;3. Turn right onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;4. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;5. Turn right onto unnamed road&#x27;
+			cell &#x27;150m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;6. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;7. Turn right onto unnamed road&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;8. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;9. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;10. Turn left onto unnamed road&#x27;
+			cell &#x27;60m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;11. Turn right onto unnamed road&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;12. Turn left onto unnamed road&#x27;
+			cell &#x27;30m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;13. Turn right onto unnamed road&#x27;
+			cell &#x27;170m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;14. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;40m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;15. Turn right onto unnamed road&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;16. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;17. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;18. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;19. Turn right onto unnamed road&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;20. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;21. Turn right onto unnamed road&#x27;
+			cell &#x27;160m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;22. Turn left onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;23. Turn right onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;24. Turn left onto unnamed road&#x27;
+			cell &#x27;90m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;25. At the end of the road turn right onto unnamed road&#x27;
+			cell &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;26. Turn left onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;27. At the end of the road turn left onto Dr. Paul Dudley White Path&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;28. Turn right onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;29. Turn right onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;30. Slight left onto unnamed road&#x27;
+			cell &#x27;130m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;31. Turn left onto unnamed road&#x27;
+			cell &#x27;110m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;32. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;110m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;33. Turn right onto unnamed road&#x27;
+			cell &#x27;40m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;34. Slight left onto Morgan Way&#x27;
+			cell &#x27;170m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;35. At the end of the road turn left onto North Harvard Street&#x27;
+			cell &#x27;40m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;36. Turn right onto unnamed road&#x27;
+			cell &#x27;170m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;37. At the end of the road turn right onto unnamed road&#x27;
+			cell &#x27;30m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;38. Reach destination&#x27;
+			cell &#x27;&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Directions courtesy of&#x27;
+		[21] link &#x27;OSRM (FOSSGIS)&#x27;, url=&#x27;https://routing.openstreetmap.de/about.html&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[8] button &#x27;Marker&#x27;
+	[9] button &#x27;Marker&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	StaticText &#x27;300 m&#x27;
+	StaticText &#x27;1000 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/12-snapshot-validated-backtracking/tasks/task_82/screenshots/step_5.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page displays walking directions from &quot;Massachusetts Institute of Technology&quot; (MIT) to &quot;Harvard University.&quot; Critical information extracted includes:
+1. Transportation mode: &quot;Foot (OSRM)&quot;.
+2. Distance: 3.3km.
+3. Travel Time: 45 minutes (displayed in the paragraph section).
+4. Route details: A step-by-step table outlines the navigation instructions through unnamed roads and identifiable paths.
+
+Additionally, the interface provides options to reverse directions, open links, or modify inputs for new routes. The &quot;To&quot; and &quot;From&quot; fields are editable, and there&#x27;s a dropdown to change the travel mode. To proceed to the next subgoal, the destination needs to be updated to &quot;Boston Logan International Airport,&quot; transportation mode set to &quot;Car (OSRM),&quot; and the route recalculated.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The first subgoal (finding the walking duration from MIT to Harvard University) has been achieved, with the required travel time extracted as &quot;45 minutes.&quot; The next subgoal is to calculate the driving duration from Harvard University to Boston Logan International Airport. To accomplish this, the &quot;To&quot; field needs to be updated to &quot;Boston Logan International Airport,&quot; and the transportation mode changed to &quot;Car (OSRM).&quot;</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('3', 'Boston Logan International Airport', False)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#map=15/42.3631/-71.1118>http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#map=15/42.3631/-71.1118</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#map=15/42.3631/-71.1118&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[22] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=15/42.3631/-71.1118&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[23] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=15/42.3631/-71.1118&#x27;
+			[24] button &#x27;&#x27;
+			[25] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=15/42.3631/-71.1118&#x27;
+			[26] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=15/42.3631/-71.1118&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[27] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=15/42.3631/-71.1118&#x27;
+			[28] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+		StaticText &#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Boston Logan International Airport&#x27;, focused
+		StaticText &#x27;Boston Logan International Airport&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Foot (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[29] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[30] option &#x27;Car (OSRM)&#x27;, selected=False
+			[31] option &#x27;Foot (OSRM)&#x27;, selected=True
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Directions&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Distance: 3.3km. Time: 0:45.&#x27;
+	table &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;1. Start on unnamed road&#x27;
+			cell &#x27;70m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;2. Turn left onto unnamed road&#x27;
+			cell &#x27;30m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;3. Turn right onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;4. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;5. Turn right onto unnamed road&#x27;
+			cell &#x27;150m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;6. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;7. Turn right onto unnamed road&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;8. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;9. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;10. Turn left onto unnamed road&#x27;
+			cell &#x27;60m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;11. Turn right onto unnamed road&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;12. Turn left onto unnamed road&#x27;
+			cell &#x27;30m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;13. Turn right onto unnamed road&#x27;
+			cell &#x27;170m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;14. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;40m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;15. Turn right onto unnamed road&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;16. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;17. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;18. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;19. Turn right onto unnamed road&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;20. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;21. Turn right onto unnamed road&#x27;
+			cell &#x27;160m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;22. Turn left onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;23. Turn right onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;24. Turn left onto unnamed road&#x27;
+			cell &#x27;90m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;25. At the end of the road turn right onto unnamed road&#x27;
+			cell &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;26. Turn left onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;27. At the end of the road turn left onto Dr. Paul Dudley White Path&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;28. Turn right onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;29. Turn right onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;30. Slight left onto unnamed road&#x27;
+			cell &#x27;130m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;31. Turn left onto unnamed road&#x27;
+			cell &#x27;110m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;32. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;110m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;33. Turn right onto unnamed road&#x27;
+			cell &#x27;40m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;34. Slight left onto Morgan Way&#x27;
+			cell &#x27;170m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;35. At the end of the road turn left onto North Harvard Street&#x27;
+			cell &#x27;40m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;36. Turn right onto unnamed road&#x27;
+			cell &#x27;170m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;37. At the end of the road turn right onto unnamed road&#x27;
+			cell &#x27;30m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;38. Reach destination&#x27;
+			cell &#x27;&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Directions courtesy of&#x27;
+		[21] link &#x27;OSRM (FOSSGIS)&#x27;, url=&#x27;https://routing.openstreetmap.de/about.html&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[8] button &#x27;Marker&#x27;
+	[9] button &#x27;Marker&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=42.358%2C-71.097%3B42.368%2C-71.127#&#x27;
+	StaticText &#x27;300 m&#x27;
+	StaticText &#x27;1000 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/12-snapshot-validated-backtracking/tasks/task_82/screenshots/step_6.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the Directions interface of OpenStreetMap with walking directions from &quot;Massachusetts Institute of Technology&quot; (MIT) to &quot;Harvard University&quot; already processed. The following key details are extracted:
+1. Walking transportation mode: &quot;Foot (OSRM)&quot;.
+2. Distance: 3.3 km.
+3. Time: 45 minutes (displayed in the paragraph section as &quot;Time: 0:45&quot;).
+4. Navigation instructions are displayed in a detailed table.
+
+The &quot;To&quot; textbox (`bid: 3`) is now updated with the text &quot;Boston Logan International Airport,&quot; signifying the next destination for the driving leg of the journey. However, the transportation mode dropdown (`bid: 4`) is still set to &quot;Foot (OSRM),&quot; and the query has not yet been processed. The correct mode for driving needs to be selected: &quot;Car (OSRM).&quot;</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The first part of the goal, walking from MIT to Harvard University, has been successfully completed with the duration extracted as 45 minutes. Moving on to the second part of the goal, the system is prepared to calculate driving directions from &quot;Harvard University&quot; to &quot;Boston Logan International Airport&quot; with the destination already filled. However, the mode of transportation must be updated to &quot;Car (OSRM)&quot; to ensure the proper retrieval of driving directions and duration. This ensures accurate results.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>select_option('4', 'Car (OSRM)')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#map=15/42.3610/-71.1126>http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#map=15/42.3610/-71.1126</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#map=15/42.3610/-71.1126&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[22] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=15/42.3610/-71.1126&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[23] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=15/42.3610/-71.1126&#x27;
+			[24] button &#x27;&#x27;
+			[25] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=15/42.3610/-71.1126&#x27;
+			[26] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=15/42.3610/-71.1126&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[27] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=15/42.3610/-71.1126&#x27;
+			[28] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+		StaticText &#x27;Massachusetts Institute of Technology, Allston Street, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 02139, United States&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Boston Logan International Airport&#x27;, focused
+		StaticText &#x27;Boston Logan International Airport&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[29] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[30] option &#x27;Car (OSRM)&#x27;, selected=True
+			[31] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Directions&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Distance: 4.4km. Time: 0:07.&#x27;
+	table &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;1. Start on Vassar Street&#x27;
+			cell &#x27;1000m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;2. At the end of the road turn right onto Memorial Drive (US 3)&#x27;
+			cell &#x27;1.6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;3. Turn left onto Western Avenue&#x27;
+			cell &#x27;150m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;4. Turn right onto the ramp towards Newton, Arlington&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;5. Merge left onto Soldiers Field Road&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;6. Take the ramp on the right towards Harvard Square, Cambridge&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;7. Turn left onto North Harvard Street&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;8. Turn right onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;9. Turn right onto unnamed road&#x27;
+			cell &#x27;90m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;10. Reach destination&#x27;
+			cell &#x27;&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Directions courtesy of&#x27;
+		[21] link &#x27;OSRM (FOSSGIS)&#x27;, url=&#x27;https://routing.openstreetmap.de/about.html&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9911/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9910/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9912/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12119.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12118.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9909/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/15/9913/12120.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[8] button &#x27;Marker&#x27;
+	[9] button &#x27;Marker&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=42.3583%2C-71.0966%3B42.3679%2C-71.1268#&#x27;
+	StaticText &#x27;300 m&#x27;
+	StaticText &#x27;1000 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/12-snapshot-validated-backtracking/tasks/task_82/screenshots/step_7.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page displays driving directions from &quot;Harvard University&quot; to &quot;Boston Logan International Airport.&quot; Key details include:
+1. Driving transportation mode: &quot;Car (OSRM).&quot;
+2. Distance: 4.4 km.
+3. Travel Time: 7 minutes (displayed in the paragraph section as &quot;Time: 0:07&quot;).
+4. Navigation details provided in a step-by-step table outlining road names, distances, and turns required to reach the destination.
+
+The walking time from &quot;Massachusetts Institute of Technology&quot; to &quot;Harvard University&quot; has been previously extracted as 45 minutes. Combining both durations (45 minutes walking and 7 minutes driving) will give the total travel time.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The driving duration between &quot;Harvard University&quot; and &quot;Boston Logan International Airport&quot; has been successfully extracted as &quot;7 minutes,&quot; fulfilling the second subgoal. The total travel time can now be calculated by combining the values from both subgoals:
+- Walking time from MIT to Harvard: 45 minutes.
+- Driving time from Harvard to Boston Logan International Airport: 7 minutes.
+
+The next logical step is to stop and compute the total time required for the journey.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop('The total time required to first walk from Massachusetts Institute of Technology to Harvard University, and then drive to Boston Logan International Airport is 52 minutes.')</pre></div></div>
+
+    </body>
+</html>

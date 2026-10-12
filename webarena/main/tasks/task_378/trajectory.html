@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>Find the parking around CMU main campus</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_378/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current map is centered at coordinates 42.896, -75.108 with a zoom level of 7, showing a portion of central Pennsylvania around Reading. The search box (id 2) is present and empty.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To locate parking around CMU’s main campus, we must first center the map on the campus. Using the search bar to query a recognizable location such as “Carnegie Mellon University Pittsburgh” will re-center the view on the university grounds, making it possible to identify nearby parking lots.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'Carnegie Mellon University Pittsburgh', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447>http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Carnegie Mellon University Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=16/40.4445/-79.9447&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=16/40.4445/-79.9447&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=16/40.4445/-79.9447&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=16/40.4445/-79.9447&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=16/40.4445/-79.9447&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;Carnegie Mellon University Pittsburgh&#x27;, focused
+		StaticText &#x27;Carnegie Mellon University Pittsburgh&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[25] link &#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/relation/2279034&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[26] link &#x27;Carnegie Mellon University, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/25795401&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University Building&#x27;
+			[27] link &#x27;Carnegie Mellon University, 407, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/44157443&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=13476618%2C6537706%2C6860727&amp;maxlat=45.51404592560427&amp;maxlon=-68.07128906250001&amp;minlat=40.16208338164619&amp;minlon=-78.28857421875001&amp;query=Carnegie+Mellon+University+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24705.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	StaticText &#x27;100 m&#x27;
+	StaticText &#x27;500 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_378/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The page displays search results for &quot;Carnegie Mellon University Pittsburgh&quot;. The map is centered on the university&#x27;s location. Relevant elements include:
+- Textbox with ID &#x27;1&#x27; labeled “Search”, focused and currently contains the query.
+- Button with ID &#x27;2&#x27; labeled “Go”.
+No parking information is shown yet; the map area likely contains parking lots but the UI offers a search box to locate them.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To determine parking around CMU, using the map&#x27;s search function to query “parking near Carnegie Mellon University Pittsburgh” will bring up parking facilities and highlight them on the map.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('2', 'left')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447>http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Carnegie Mellon University Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=16/40.4445/-79.9447&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=16/40.4445/-79.9447&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=16/40.4445/-79.9447&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=16/40.4445/-79.9447&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=16/40.4445/-79.9447&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;Carnegie Mellon University Pittsburgh&#x27;
+		StaticText &#x27;Carnegie Mellon University Pittsburgh&#x27;
+	[2] button &#x27;Go&#x27;, focused
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[25] link &#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/relation/2279034&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[26] link &#x27;Carnegie Mellon University, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/25795401&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University Building&#x27;
+			[27] link &#x27;Carnegie Mellon University, 407, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/44157443&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=13476618%2C6537706%2C6860727&amp;maxlat=40.44993679782271&amp;maxlon=-79.934720993042&amp;minlat=40.439077326992766&amp;minlon=-79.95467662811281&amp;query=Carnegie+Mellon+University+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24705.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	StaticText &#x27;100 m&#x27;
+	StaticText &#x27;500 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_378/screenshots/step_2.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The page displays a search box (ID 1) containing the query “Carnegie Mellon University Pittsburgh”. The map is centered on the campus area. There are no parking lot names currently displayed on the map or in the search results. A “Go” button (ID 2) is present for submitting queries. To find parking around the campus, we need to perform a search for parking facilities in or near the campus area.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Clicking “Go” without changing the query will just re‑display the same result. We should modify the search to look for parking. Using the search box with a query such as “parking” or “parking near Carnegie Mellon University Pittsburgh” should bring up relevant parking locations on the map. Once the map displays parking icons or names, we can read them out.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('1', 'parking near Carnegie Mellon University Pittsburgh', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#map=19/40.44286/-79.94868>http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#map=19/40.44286/-79.94868</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;parking near Carnegie Mellon University Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#map=19/40.44286/-79.94868&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.44286/-79.94868&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=19/40.44286/-79.94868&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.44286/-79.94868&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.44286/-79.94868&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.44286/-79.94868&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;parking near Carnegie Mellon University Pittsburgh&#x27;, focused
+		StaticText &#x27;parking near Carnegie Mellon University Pittsburgh&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[25] link &#x27;Carnegie Institute Parking Garage, Boundary Street, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/29094325&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[26] link &#x27;Warner Hall parking lot, Forbes Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/27591134&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[27] link &#x27;Boundary Junction Parking, Schenley Drive, Panther Hollow, Central Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/313329260&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[28] link &#x27;CIC Garage, 594, Boundary Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/9081931417&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[29] link &#x27;Margaret Morrison Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/27574335&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[30] link &#x27;Hamerschlag Drive, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/27623258&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[31] link &#x27;Forbes Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/27630132&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[32] link &#x27;Morewood Place, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/27630268&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[33] link &#x27;Forbes Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15221, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/27630523&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Parking&#x27;
+			[34] link &#x27;East Campus Garage, 5060, Forbes Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15221, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/27574237&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=6537067%2C6564440%2C9740988%2C4811638%2C6525328%2C6531889%2C6543604%2C6547807%2C6547811%2C6549017&amp;maxlat=40.44993624656538&amp;maxlon=-79.934720993042&amp;minlat=40.439076775646384&amp;minlon=-79.95467662811281&amp;query=parking+near+Carnegie+Mellon+University+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145710/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145710/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145709/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145711/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145709/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145711/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145710/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145710/197641.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145709/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145711/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145709/197641.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145711/197641.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145712/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145712/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145712/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197641.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145712/197641.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=parking%20near%20Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_378/screenshots/step_3.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page shows a list of parking locations near Carnegie Mellon University (Pittsburgh) from OpenStreetMap. The list includes the following entries with full addresses:
+
+1. **Carnegie Institute Parking Garage, Boundary Street, North Oakland, Pittsburgh, Allegheny County, 15213, United States**  
+2. **Warner Hall parking lot, Forbes Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States**  
+3. **Boundary Junction Parking, Schenley Drive, Panther Hollow, Central Oakland, Pittsburgh, Allegheny County, 15213, United States**  
+4. **CIC Garage, 594, Boundary Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States**  
+5. **Margaret Morrison Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States**  
+6. **Hamerschlag Drive, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States**  
+7. **Forbes Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States**  
+8. **Morewood Place, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States**  
+9. **Forbes Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15221, United States**  
+10. **East Campus Garage, 5060, Forbes Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15221, United States**</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>These entries are directly relevant to the goal of finding parking around CMU’s main campus. The addresses indicate proximity to the university’s location. There are no additional hidden or alternate listings on this page that need further exploration.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop('Parking locations around Carnegie Mellon University (Pittsburgh): 1. Carnegie Institute Parking Garage, Boundary Street, North Oakland; 2. Warner Hall parking lot, Forbes Avenue; 3. Boundary Junction Parking, Schenley Drive; 4. CIC Garage, 594 Boundary Street; 5. Margaret Morrison Street; 6. Hamerschlag Drive; 7. Forbes Avenue; 8. Morewood Place; 9. Forbes Avenue (15221); 10. East Campus Garage, 5060 Forbes Avenue.')</pre></div></div>
+
+    </body>
+</html>

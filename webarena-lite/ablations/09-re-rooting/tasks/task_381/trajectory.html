@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>Find the hotel around Carnegie Music Hall</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/09-re-rooting/tasks/task_381/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the OpenStreetMap homepage, which allows users to explore maps of the world. Key interactive elements include a search textbox (`bid=&#x27;2&#x27;`) along with a &quot;Go&quot; button (`bid=&#x27;3`&#x27;) to initiate map searches. Other elements include zoom controls (`bid=&#x27;8&#x27; and &#x27;9`), a button for showing the user&#x27;s location (`bid=&#x27;10&#x27;`), and links for map layers (`bid=&#x27;11&#x27;`) and directions between points (`bid=&#x27;4&#x27;`). No explicit mentions of hotels or Carnegie Music Hall are found on this page. The search bar likely allows for searching specific locations or landmarks such as &quot;Carnegie Music Hall.&quot;</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To locate hotels near Carnegie Music Hall, the first step is to identify its location on the map. Using the search box to input &quot;Carnegie Music Hall&quot; and initiate the map search seems to be the most effective way to proceed. This action establishes the necessary foundation for narrowing nearby hotels afterward.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'Carnegie Music Hall', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#map=19/40.44331/-79.95097>http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#map=19/40.44331/-79.95097</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Carnegie Music Hall | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#map=19/40.44331/-79.95097&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.44331/-79.95097&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=19/40.44331/-79.95097&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.44331/-79.95097&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.44331/-79.95097&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[26] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.44331/-79.95097&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;Carnegie Music Hall&#x27;, focused
+		StaticText &#x27;Carnegie Music Hall&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Theatre&#x27;
+			[25] link &#x27;Carnegie Music Hall, Forbes Avenue, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=7093942&amp;maxlat=45.51404592560427&amp;maxlon=-68.07128906250001&amp;minlat=40.16208338164619&amp;minlon=-78.28857421875001&amp;query=Carnegie+Music+Hall&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145706/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145707/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145706/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145707/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145706/197637.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145707/197637.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145705/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145705/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145706/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145707/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145705/197637.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197637.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145705/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197640.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Music%20Hall#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/09-re-rooting/tasks/task_381/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page shows the OpenStreetMap interface and the results of a search for &quot;Carnegie Music Hall.&quot; The map is centered on the Carnegie Music Hall&#x27;s location at Forbes Avenue, North Oakland, Pittsburgh, Allegheny County, 15213, United States. The results section explicitly lists this location as part of the search result (accessible via a link). Nearby hotels or any points of interest related to the Carnegie Music Hall are not directly visible.
+
+Relevant elements:
+1. Search box (bid=&#x27;1&#x27;) and Go button (bid=&#x27;2&#x27;) remain available for further queries.
+2. The result titled &quot;Carnegie Music Hall, Forbes Avenue,...&quot; appears in the results list with a clickable link (bid=&#x27;25&#x27;).
+3. Additional options like &quot;Find directions between two points&quot; (bid=&#x27;3&#x27;) and map zoom controls (bid=&#x27;6&#x27; and &#x27;7&#x27;) are seen but not immediately related to hotels.
+
+No information about hotels is directly listed on this page.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Since the request is to find hotels around Carnegie Music Hall, and this result page focuses only on the location of the hall, further exploration is needed. A logical progression might involve:
+1. Clicking on the search result (bid=&#x27;25&#x27;) for Carnegie Music Hall to access detailed information about its surroundings or tags, which often include nearby amenities.
+2. Checking for any additional map layers, search filters, or nearby listings of accommodations.
+
+Clicking on the result may potentially display further details about its proximity, including nearby businesses or specific locations like hotels.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('25')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/way/154257484>http://10.141.10.6:3000/way/154257484</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Way: \u202aCarnegie Music Hall\u202c (\u202a154257484\u202c) | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/way/154257484&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[19] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.44331/-79.95097&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[20] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit?way=154257484#map=19/40.44331/-79.95097&#x27;
+			[21] button &#x27;&#x27;
+			[22] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.44331/-79.95097&#x27;
+			[23] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.44331/-79.95097&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[24] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.44331/-79.95097&#x27;
+			[25] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484#&#x27;
+	[2] textbox &#x27;Search&#x27;
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Way: Carnegie Music Hall (154257484)&#x27;
+	[5] button &#x27;Close&#x27;
+	heading &#x27;Version #8&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;(no comment)&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Edited&#x27;
+			Abbr &#x27;Fri, 11 Nov 2022 15:45:17 +0000&#x27;
+				StaticText &#x27;about 3 years ago&#x27;
+			StaticText &#x27;by anonymous&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Changeset #&#x27;
+			[26] link &#x27;0&#x27;, url=&#x27;http://10.141.10.6:3000/changeset/0&#x27;
+	heading &#x27;Tags&#x27;
+	table &#x27;&#x27;
+		rowgroup &#x27;&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;addr:city&#x27;
+					[33] link &#x27;addr:city&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:addr:city?uselang=en&#x27;
+				cell &#x27;Pittsburgh&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;addr:state&#x27;
+					[34] link &#x27;addr:state&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:addr:state?uselang=en&#x27;
+				cell &#x27;PA&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;amenity&#x27;
+					[35] link &#x27;amenity&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:amenity?uselang=en&#x27;
+				cell &#x27;theatre&#x27;
+					[36] link &#x27;theatre&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Tag:amenity=theatre?uselang=en&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;building&#x27;
+					[37] link &#x27;building&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:building?uselang=en&#x27;
+				cell &#x27;yes&#x27;
+					[38] link &#x27;yes&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Tag:building=yes?uselang=en&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name&#x27;
+					[39] link &#x27;name&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name?uselang=en&#x27;
+				cell &#x27;Carnegie Music Hall&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;operator&#x27;
+					[40] link &#x27;operator&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:operator?uselang=en&#x27;
+				cell &#x27;Carnegie Institute&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;website&#x27;
+					[41] link &#x27;website&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:website?uselang=en&#x27;
+				cell &#x27;https://www.pittsburghsymphony.org/venues/carnegie-music-hall&#x27;
+					[42] link &#x27;https://www.pittsburghsymphony.org/venues/carnegie-music-hall&#x27;, url=&#x27;https://www.pittsburghsymphony.org/venues/carnegie-music-hall&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;wikidata&#x27;
+					[43] link &#x27;wikidata&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:wikidata?uselang=en&#x27;
+				cell &#x27;Q79954398&#x27;
+					[44] link &#x27;Q79954398&#x27;, url=&#x27;http://www.wikidata.org/entity/Q79954398?uselang=en&#x27;
+	heading &#x27;Nodes&#x27;
+	group &#x27;&#x27;
+		DisclosureTriangle &#x27;13 nodes&#x27;, expanded=False
+	[6] link &#x27;Download XML&#x27;, url=&#x27;http://10.141.10.6:3000/api/0.6/way/154257484&#x27;
+	StaticText &#x27;·&#x27;
+	[7] link &#x27;View History&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484/history&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145706/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145707/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145706/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145707/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145706/197637.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145707/197637.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145705/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197638.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145705/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197639.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145706/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145707/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145705/197637.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197637.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145705/197640.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145708/197640.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/way/154257484#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/09-re-rooting/tasks/task_381/screenshots/step_2.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is focused on the &quot;Carnegie Music Hall&quot; location within OpenStreetMap, associated with the ID `154257484`. Key details about the hall, such as its name, operator (Carnegie Institute), city (Pittsburgh), state (PA), and website URL (https://www.pittsburghsymphony.org/venues/carnegie-music-hall), are available under the &quot;Tags&quot; section. 
+
+There is no information specific to nearby hotels on this page. Interactive elements such as zoom controls (`bid=&#x27;8&#x27;` and `bid=&#x27;9&#x27;`), a &quot;Show My Location&quot; button (`bid=&#x27;10&#x27;`), and a &quot;Layers&quot; button (`bid=&#x27;11&#x27;`) may provide ways to explore nearby areas, but no explicit mention of hotels or filters for accommodations exists.
+
+The &quot;Search&quot; text box (bid=&#x27;2&#x27;) is still present, offering an opportunity to input a new query. This may allow searching specifically for nearby hotels.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Since there is no visible or labeled interface showing nearby hotels surrounding Carnegie Music Hall, the most logical next step is to utilize the search box (`bid=&#x27;2`) to refine the search. Entering a query like &quot;hotels near Carnegie Music Hall&quot; should provide more targeted results relevant to the goal.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'hotels near Carnegie Music Hall', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#map=19/40.44812/-79.93836>http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#map=19/40.44812/-79.93836</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;hotels near Carnegie Music Hall | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#map=19/40.44812/-79.93836&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[19] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.44812/-79.93836&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[20] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=19/40.44812/-79.93836&#x27;
+			[21] button &#x27;&#x27;
+			[22] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.44812/-79.93836&#x27;
+			[23] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.44812/-79.93836&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[24] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.44812/-79.93836&#x27;
+			[25] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;hotels near Carnegie Music Hall&#x27;, focused
+		StaticText &#x27;hotels near Carnegie Music Hall&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[18] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[26] link &#x27;Mansions On Fifth Hotel, 5105, Fifth Avenue, Shadyside, Pittsburgh, Allegheny County, 15232, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/545280741&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[27] link &#x27;The Oaklander Hotel, 5130, Bigelow Boulevard, North Oakland, Pittsburgh, Allegheny County, 15260, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5975858044&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[28] link &#x27;Wyndham Pittsburgh University Center, Lytton Avenue, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/543156474&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[29] link &#x27;Hilton Garden Inn Pittsburgh University Place, McKee Place, Oakland, Central Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/312632782&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[30] link &#x27;Quality Inn University Center, Halket Street, Central Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/306643544&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[31] link &#x27;Residence Inn, 3341, Forbes Avenue, South Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/535398524&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[32] link &#x27;Hampton Inn Pittsburgh University/Medical Center, McDevitt Place, South Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/323751618&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[33] link &#x27;Fifth Avenue, Squirrel Hill North, Pittsburgh, Allegheny County, 15232, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/4095602841&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[34] link &#x27;Hotel Indigo, 329, Technology Drive, South Oakland, Pittsburgh, Allegheny County, 15219, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/786082158&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[35] link &#x27;Family House, 5245, Centre Avenue, Bloomfield, Pittsburgh, Allegheny County, 15232, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/167411637&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=10628896%2C645660%2C10569864%2C144732%2C9724486%2C10628024%2C9743002%2C511447%2C11343819%2C7112656&amp;maxlat=40.44398947157293&amp;maxlon=-79.9497225880623&amp;minlat=40.44263201355494&amp;minlon=-79.95221704244615&amp;query=hotels+near+Carnegie+Music+Hall&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145725/197629.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145725/197630.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145724/197629.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145726/197629.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145724/197630.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145726/197630.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145725/197628.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145725/197631.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145724/197628.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145726/197628.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145724/197631.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145726/197631.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145723/197629.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145727/197629.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145723/197630.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145727/197630.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145723/197628.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145727/197628.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145723/197631.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145727/197631.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[6] button &#x27;Marker&#x27;
+	[7] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#&#x27;
+	[8] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#&#x27;
+	[9] button &#x27;Show My Location&#x27;
+	[10] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#&#x27;
+	[11] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#&#x27;
+	[12] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=hotels%20near%20Carnegie%20Music%20Hall#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[15] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[16] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[17] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/09-re-rooting/tasks/task_381/screenshots/step_3.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page displays search results for &quot;hotels near Carnegie Music Hall&quot; within OpenStreetMap. The &quot;Results from OpenStreetMap Nominatim&quot; section lists multiple hotels near Carnegie Music Hall, including their names, addresses, and links to individual OpenStreetMap pages for each location. Specific examples include:
+
+1. **Mansions On Fifth Hotel** - 5105 Fifth Avenue, Shadyside, Pittsburgh, PA, 15232, United States.
+2. **The Oaklander Hotel** - 5130 Bigelow Boulevard, North Oakland, Pittsburgh, PA, 15260, United States.
+3. **Wyndham Pittsburgh University Center** - Lytton Avenue, North Oakland, Pittsburgh, PA, 15213, United States.
+4. **Hilton Garden Inn Pittsburgh University Place** - McKee Place, Oakland, Central Oakland, Pittsburgh, PA, 15213, United States.
+5. **Quality Inn University Center** - Halket Street, Central Oakland, Pittsburgh, PA, 15213, United States.
+6. **Residence Inn** - 3341 Forbes Avenue, South Oakland, Pittsburgh, PA, 15213, United States.
+7. **Hampton Inn Pittsburgh University/Medical Center** - McDevitt Place, South Oakland, Pittsburgh, PA, 15213, United States.
+8. **Hotel Indigo** - 329 Technology Drive, South Oakland, Pittsburgh, PA, 15219, United States.
+
+Further links (such as &quot;More results&quot;) and interactive map tools, including Zoom-In (`bid=&#x27;7&#x27;`) and Zoom-Out (`bid=&#x27;8&#x27;`), are also available for exploring additional results. The names and addresses extracted from this list fulfill the requested goal.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The task is to find hotels near Carnegie Music Hall, and the current page explicitly provides a complete list of nearby hotels along with their addresses. The information is comprehensive and meets the requirements. No further exploration or interaction is needed as all data is clearly presented.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop('The search results show hotels near Carnegie Music Hall, including Mansions On Fifth Hotel, The Oaklander Hotel, Wyndham Pittsburgh University Center, Hilton Garden Inn Pittsburgh University Place, Quality Inn University Center, Residence Inn, Hampton Inn Pittsburgh University/Medical Center, and Hotel Indigo. Their addresses are provided in the results.')</pre></div></div>
+
+    </body>
+</html>

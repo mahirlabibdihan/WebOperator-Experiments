@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>I am arriving at Pittsburgh Airport. Show me the name of a Hyatt hotel if there is any nearby. Tell me the names of supermarkets that are within 15mins driving from the hotel</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/06-context-variation/tasks/task_383/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is OpenStreetMap, a platform for interactive mapping and searching of locations, businesses, and points of interest. It contains:
+1. A search textbox (`id=2`) to input queries (currently focused).
+2. A &quot;Go&quot; button (`id=3`) used to submit search terms.
+3. Other navigational components, such as &quot;Directions,&quot; &quot;Zoom,&quot; and &quot;Layers.&quot; 
+
+The page does not display specific information such as hotel names (including Hyatt) or nearby supermarkets yet. To proceed, it seems necessary to utilize the search functionality to begin locating Pittsburgh Airport as the first step towards the goal.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>In order to find a nearby Hyatt hotel and supermarkets within a 15-minute drive, we need to pinpoint Pittsburgh Airport. OpenStreetMap provides a search functionality that allows locating specific places; filling in &quot;Pittsburgh Airport&quot; as the search term will align the map with this location and allow further exploration.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'Pittsburgh Airport', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#map=17/40.49584/-80.25030>http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#map=17/40.49584/-80.25030</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Pittsburgh Airport | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#map=17/40.49584/-80.25030&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=17/40.49584/-80.25030&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=17/40.49584/-80.25030&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=17/40.49584/-80.25030&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=17/40.49584/-80.25030&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=17/40.49584/-80.25030&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;Pittsburgh Airport&#x27;, focused
+		StaticText &#x27;Pittsburgh Airport&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Monorail&#x27;
+			[25] link &#x27;Pittsburgh International Airport People Movers, Airport Boulevard, Findlay Township, Allegheny County, 15231, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/240095807&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[26] link &#x27;Courtyard Pittsburgh Airport Settlers Ridge, 5100, Campbells Run Road, Gayly, Pittsburgh, Allegheny County, 15205, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/2177517867&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[27] link &#x27;Residence Inn by Marriott Pittsburgh Airport, 1500, Park Lane Drive, RIDC Park West, Beechcliff, Pittsburgh, Allegheny County, 15275, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/7976987969&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[28] link &#x27;Hyatt Place Pittsburgh Airport, Campbells Run Road, Pittsburgh, Allegheny County, 15244, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/255607067&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[29] link &#x27;Hilton Garden Inn Pittsburgh Airport South-Robinson Mall, 303, Park Manor Drive, Pittsburgh, Allegheny County, 15205, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/390501003&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Hotel&#x27;
+			[30] link &#x27;Hyatt Regency Pittsburgh International Airport, Airport Boulevard, Findlay Township, Allegheny County, 15231, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Airport Terminal&#x27;
+			[31] link &#x27;Pittsburgh International Airport Landside Terminal, 1000, Airport Boulevard, Findlay Township, Allegheny County, 15231, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/551672773&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Model aerodrome&#x27;
+			[32] link &#x27;Greater Pittsburgh Aero Radio Control Society Model Aircraft Field, 80, Model Airport Road, Burgettstown, Washington County, 15021, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/288265843&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=8792537%2C282582%2C1371426%2C9280684%2C9866119%2C9716802%2C10684705%2C9685709%2C9685724&amp;maxlat=45.51404592560427&amp;maxlon=-68.07128906250001&amp;minlat=40.16208338164619&amp;minlon=-78.28857421875001&amp;query=Pittsburgh+Airport&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36317/49384.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36317/49383.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36316/49384.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36318/49384.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36317/49385.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36316/49383.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36318/49383.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36316/49385.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36318/49385.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36315/49384.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36319/49384.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36315/49383.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36319/49383.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36315/49385.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36319/49385.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Pittsburgh%20Airport#&#x27;
+	StaticText &#x27;50 m&#x27;
+	StaticText &#x27;200 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/06-context-variation/tasks/task_383/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page displays search results for &quot;Pittsburgh Airport&quot; on OpenStreetMap. Key extracted data relevant to the goal includes the presence of two Hyatt hotels near Pittsburgh Airport:
+1. **Hyatt Place Pittsburgh Airport** located on Campbells Run Road, Pittsburgh, Allegheny County, 15244.
+2. **Hyatt Regency Pittsburgh International Airport** located on Airport Boulevard, Findlay Township, Allegheny County, 15231.
+
+Both hotels are listed under the &quot;Results from OpenStreetMap Nominatim&quot; heading, with clickable links leading to further details about their locations.
+
+No information regarding supermarkets within a 15-minute driving radius is presently displayed. Navigation components for searching or exploring nearby supermarkets include the search box, &quot;Go&quot; button, and options for obtaining directions.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To fulfill the goal, we already have the names of two nearby Hyatt hotels. The next logical step is to focus on identifying supermarkets within a 15-minute driving radius of one of these hotels. Selecting one of the Hyatt hotels (for instance, &quot;Hyatt Regency Pittsburgh International Airport&quot;) will guide the subsequent search for supermarkets located nearby. Clicking its link will likely provide detailed map information, which can be explored further.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('30')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/way/300462451>http://10.141.10.6:3000/way/300462451</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Way: \u202aHyatt Regency Pittsburgh International Airport\u202c (\u202a300462451\u202c) | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/way/300462451&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[19] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.49632/-80.25994&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[20] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit?way=300462451#map=19/40.49632/-80.25994&#x27;
+			[21] button &#x27;&#x27;
+			[22] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.49632/-80.25994&#x27;
+			[23] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.49632/-80.25994&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[24] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.49632/-80.25994&#x27;
+			[25] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451#&#x27;
+	[2] textbox &#x27;Search&#x27;
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Way: Hyatt Regency Pittsburgh International Airport (300462451)&#x27;
+	[5] button &#x27;Close&#x27;
+	heading &#x27;Version #4&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;(no comment)&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Edited&#x27;
+			Abbr &#x27;Sun, 29 Dec 2019 06:41:08 +0000&#x27;
+				StaticText &#x27;almost 6 years ago&#x27;
+			StaticText &#x27;by anonymous&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Changeset #&#x27;
+			[26] link &#x27;0&#x27;, url=&#x27;http://10.141.10.6:3000/changeset/0&#x27;
+	heading &#x27;Tags&#x27;
+	table &#x27;&#x27;
+		rowgroup &#x27;&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;building&#x27;
+					[34] link &#x27;building&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:building?uselang=en&#x27;
+				cell &#x27;yes&#x27;
+					[35] link &#x27;yes&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Tag:building=yes?uselang=en&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;building:part&#x27;
+					[36] link &#x27;building:part&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:building:part?uselang=en&#x27;
+				cell &#x27;yes&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name&#x27;
+					[37] link &#x27;name&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name?uselang=en&#x27;
+				cell &#x27;Hyatt Regency Pittsburgh International Airport&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;tourism&#x27;
+					[38] link &#x27;tourism&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:tourism?uselang=en&#x27;
+				cell &#x27;hotel&#x27;
+					[39] link &#x27;hotel&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Tag:tourism=hotel?uselang=en&#x27;
+	heading &#x27;Part of&#x27;
+	group &#x27;&#x27;
+		DisclosureTriangle &#x27;1 relation&#x27;, expanded=True
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				StaticText &#x27;Relation&#x27;
+				[27] link &#x27;Hyatt Regency Pittsburgh International Airport (3995364)&#x27;, url=&#x27;http://10.141.10.6:3000/relation/3995364&#x27;
+				StaticText &#x27;(as outline)&#x27;
+	heading &#x27;Nodes&#x27;
+	group &#x27;&#x27;
+		DisclosureTriangle &#x27;21 nodes&#x27;, expanded=False
+	[6] link &#x27;Download XML&#x27;, url=&#x27;http://10.141.10.6:3000/api/0.6/way/300462451&#x27;
+	StaticText &#x27;·&#x27;
+	[7] link &#x27;View History&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451/history&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145256/197537.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145257/197537.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145256/197536.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145257/197536.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145256/197538.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145257/197538.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145255/197537.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145258/197537.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145255/197536.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145258/197536.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145255/197538.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145258/197538.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/way/300462451#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/06-context-variation/tasks/task_383/screenshots/step_2.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page displays detailed information about the **Hyatt Regency Pittsburgh International Airport**, confirming its location and name. Specific tags on the page explicitly list:
+- The hotel name as **Hyatt Regency Pittsburgh International Airport**.
+- The &quot;tourism&quot; tag identifies it as a hotel.
+
+Additional actionable elements include search functionality (`textbox &#x27;2&#x27;` and button &#x27;Go&#x27;) that can be used to search for supermarkets within driving distance from this hotel.
+
+No information about nearby supermarkets is currently shown. However, OpenStreetMap&#x27;s search interface appears capable of locating nearby points of interest (e.g., supermarkets).</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Given that the hotel name (**Hyatt Regency Pittsburgh International Airport**) has been retrieved successfully, the next logical step is to locate and identify supermarkets within a 15-minute driving radius from this hotel. Using the search box to query &quot;supermarkets near Hyatt Regency Pittsburgh International Airport&quot; may provide a filtered list of results.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'supermarkets near Hyatt Regency Pittsburgh International Airport', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#map=19/40.51555/-80.22416>http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#map=19/40.51555/-80.22416</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;supermarkets near Hyatt Regency Pittsburgh International Airport | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#map=19/40.51555/-80.22416&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.51555/-80.22416&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=19/40.51555/-80.22416&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.51555/-80.22416&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.51555/-80.22416&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.51555/-80.22416&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;supermarkets near Hyatt Regency Pittsburgh International Airport&#x27;, focused
+		StaticText &#x27;supermarkets near Hyatt Regency Pittsburgh International Airport&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Supermarket&#x27;
+			[25] link &#x27;Walmart Supercenter, 7500, University Boulevard, Carnot, Moon Township, Allegheny County, 15108, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/640876508&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Supermarket&#x27;
+			[26] link &#x27;Giant Eagle, Grant Drive, Carnot, Moon Township, Allegheny County, 15108, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/1210021811&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Supermarket&#x27;
+			[27] link &#x27;ALDI, 2830, Gracy Center Way, Carnot, Moon Township, Allegheny County, 15108, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/1065726873&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=10887868%2C238665%2C13070230&amp;maxlat=40.49699859312461&amp;maxlon=-80.25869160890579&amp;minlat=40.49564220618932&amp;minlon=-80.26118606328966&amp;query=supermarkets+near+Hyatt+Regency+Pittsburgh+International+Airport&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145308/197500.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145309/197500.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145308/197499.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145309/197499.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145308/197501.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145309/197501.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145307/197500.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145310/197500.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145307/197499.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145310/197499.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145307/197501.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145310/197501.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=supermarkets%20near%20Hyatt%20Regency%20Pittsburgh%20International%20Airport#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/06-context-variation/tasks/task_383/screenshots/step_3.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page displays search results for supermarkets near **Hyatt Regency Pittsburgh International Airport**. Three supermarkets within proximity are explicitly listed under the &quot;Results from OpenStreetMap Nominatim&quot; heading:
+1. **Walmart Supercenter**, 7500, University Boulevard, Carnot, Moon Township, Allegheny County, 15108, United States.
+2. **Giant Eagle**, Grant Drive, Carnot, Moon Township, Allegheny County, 15108, United States.
+3. **ALDI**, 2830, Gracy Center Way, Carnot, Moon Township, Allegheny County, 15108, United States.
+
+Each entry includes a clickable link leading to further details about its location.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The goal is to locate a Hyatt hotel near Pittsburgh Airport and provide its name, then identify supermarkets within a 15-minute drive from the hotel. The hotel name, **Hyatt Regency Pittsburgh International Airport**, was previously identified. On this page, three nearby supermarkets were successfully found. There is no need for additional exploration as all required details for the goal are now available.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop('The nearby Hyatt hotel is Hyatt Regency Pittsburgh International Airport. Supermarkets within a 15-minute driving distance include Walmart Supercenter, Giant Eagle, and ALDI.')</pre></div></div>
+
+    </body>
+</html>

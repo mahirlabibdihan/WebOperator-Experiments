@@ -1,0 +1,1203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>Where is the nearest pharmacy from Carnegie Mellon I can walk within 20mins</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The page is the OpenStreetMap map interface.  
+- The search textbox has ID `2` and is currently focused.  
+- The map is centered at latitude 42.896, longitude -75.108 (Ithaca, NY).  
+- No results are currently displayed from the search.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To find a pharmacy near Carnegie Mellon University, I first need to navigate the map to the correct location: Pittsburgh, PA. Searching for “Carnegie Mellon University Pittsburgh” will center the map on the campus. After that, I will use the search box again for &quot;pharmacy&quot; to locate nearby pharmacies.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'Carnegie Mellon University Pittsburgh', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447>http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Carnegie Mellon University Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=16/40.4445/-79.9447&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=16/40.4445/-79.9447&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=16/40.4445/-79.9447&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=16/40.4445/-79.9447&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=16/40.4445/-79.9447&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;Carnegie Mellon University Pittsburgh&#x27;, focused
+		StaticText &#x27;Carnegie Mellon University Pittsburgh&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[25] link &#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/relation/2279034&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[26] link &#x27;Carnegie Mellon University, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/25795401&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University Building&#x27;
+			[27] link &#x27;Carnegie Mellon University, 407, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/44157443&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=13476618%2C6537706%2C6860727&amp;maxlat=45.51404592560427&amp;maxlon=-68.07128906250001&amp;minlat=40.16208338164619&amp;minlon=-78.28857421875001&amp;query=Carnegie+Mellon+University+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24705.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	StaticText &#x27;100 m&#x27;
+	StaticText &#x27;500 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page shows search results for “Carnegie Mellon University, Pittsburgh” with a map centered at coordinates ~40.44 N, –79.94 W. The relevant interactive element for entering a new query is the textbox with ID `1` labeled “Search” and the associated button with ID `2`.    
+No pharmacy markers or distances are present yet; we need to query the map for pharmacies near this campus.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To determine the nearest pharmacy reachable within a 20‑minute walk (~1.6 km), we should:
+1. Enter a new search term “pharmacy” (likely, the map will tag nearby pharmacies).
+2. View the resulting map markers and identify which pharmacy is shortest distance from the campus center (now at ~40.44 N, –79.94 W).  
+Thus the immediate next step is to issue the search for “pharmacy”.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('1', 'pharmacy', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=pharmacy#map=19/40.68207/-73.87821>http://10.141.10.6:3000/search?query=pharmacy#map=19/40.68207/-73.87821</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;pharmacy | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#map=19/40.68207/-73.87821&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.68207/-73.87821&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=19/40.68207/-73.87821&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.68207/-73.87821&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.68207/-73.87821&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.68207/-73.87821&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;pharmacy&#x27;, focused
+		StaticText &#x27;pharmacy&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[25] link &#x27;Pharmacy, 3147, Fulton Street, City Line, Brooklyn, Kings County, City of New York, New York, 11208, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5209294302&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[26] link &#x27;Pharmacy, 3138, Fulton Street, Cypress Hills, Brooklyn, Kings County, City of New York, New York, 11208, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5209293424&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Convenience Store&#x27;
+			[27] link &#x27;Pharmacy, West 19th Street, Chelsea District, Manhattan, New York County, City of New York, New York, 10011, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/6621617757&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[28] link &#x27;Pharmacy, 945, Rosedale Road, South Valley Stream, Town of Hempstead, Nassau County, New York, 11581, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5303668451&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[29] link &#x27;Pharmacy, South Girard Avenue, National Park, Gloucester County, New Jersey, 08063, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/267105141&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=588888%2C593662%2C680588%2C602679%2C9332153&amp;maxlat=40.44993528042811&amp;maxlon=-79.934720993042&amp;minlat=40.439075809353014&amp;minlon=-79.95467662811281&amp;query=pharmacy&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154550/197180.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154551/197180.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154550/197181.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154551/197181.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154550/197179.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154551/197179.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154549/197180.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154552/197180.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154549/197181.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154552/197181.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154550/197182.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154551/197182.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154549/197179.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154552/197179.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154549/197182.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154552/197182.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_2.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the search results for “pharmacy” but it is centered on coordinates (40.68207, -73.87821) in New York, not on Carnegie Mellon University. The search results list pharmacies in Brooklyn, Manhattan, etc., all irrelevant to the user’s request. The search box with ID `1` and the “Go” button with ID `2` are available on this page, but the map’s center is not at Carnegie Mellon.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The user needs the nearest pharmacy within a 20‑minute walk (~1.6 km) from Carnegie Mellon University in Pittsburgh. Currently the map is focused on the wrong area. We must return to the page that was centered on Carnegie Mellon and then search for pharmacies there. The first step is to navigate back to that page.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>go_back()</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447>http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Carnegie Mellon University Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=16/40.4445/-79.9447&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=16/40.4445/-79.9447&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=16/40.4445/-79.9447&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=16/40.4445/-79.9447&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=16/40.4445/-79.9447&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;Carnegie Mellon University Pittsburgh&#x27;, focused
+		StaticText &#x27;Carnegie Mellon University Pittsburgh&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[25] link &#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/relation/2279034&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[26] link &#x27;Carnegie Mellon University, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/25795401&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University Building&#x27;
+			[27] link &#x27;Carnegie Mellon University, 407, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/44157443&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=13476618%2C6537706%2C6860727&amp;maxlat=40.44993528042811&amp;maxlon=-79.934720993042&amp;minlat=40.439075809353014&amp;minlon=-79.95467662811281&amp;query=Carnegie+Mellon+University+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24705.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	StaticText &#x27;100 m&#x27;
+	StaticText &#x27;500 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_3.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>We are on the Carnegie Mellon University Pittsburgh search results page at  
+`http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447`.  
+Key state:
+- Search textbox with ID `1` currently contains `Carnegie Mellon University Pittsburgh`.  
+- “Go” button with ID `2`.  
+- Map centered on coordinates (40.4445, -79.9447).  
+- No pharmacy markers currently displayed; a prior search for “pharmacy” centered on New York, indicating that the query was too generic.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>A generic “pharmacy” search defaults to the nearest result globally, which moved the map to New York.  
+We need the nearest pharmacy within a 20‑minute walk (~1.6 km) from Carnegie Mellon in Pittsburgh.  
+Adding a location qualifier to the search string (“pharmacy, Pittsburgh”) will limit results to the Pittsburgh area, likely displaying pharmacy markers close to Carnegie Mellon.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('1', 'pharmacy, Pittsburgh', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#map=19/40.45060/-79.93526>http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#map=19/40.45060/-79.93526</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;pharmacy, Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#map=19/40.45060/-79.93526&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.45060/-79.93526&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=19/40.45060/-79.93526&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.45060/-79.93526&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.45060/-79.93526&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.45060/-79.93526&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;pharmacy, Pittsburgh&#x27;, focused
+		StaticText &#x27;pharmacy, Pittsburgh&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[25] link &quot;Schiller&#x27;s Pharmacy, 811, South Aiken Avenue, Shadyside, Pittsburgh, Allegheny County, 15232, United States&quot;, url=&#x27;http://10.141.10.6:3000/way/183007767&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[26] link &#x27;CVS Pharmacy, 5600, Wilkins Avenue, Squirrel Hill, Squirrel Hill North, Pittsburgh, Allegheny County, 15217, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/1371572673&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[27] link &#x27;Giant Eagle Pharmacy, 1901, Murray Avenue, Squirrel Hill South, Pittsburgh, Allegheny County, 15217, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/4960676734&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[28] link &#x27;CVS Pharmacy, Forbes Avenue, Oakland, Central Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/312632774&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[29] link &#x27;University Pharmacy, 4200, Fifth Avenue, North Oakland, Pittsburgh, Allegheny County, 15260, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/8010585574&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[30] link &#x27;CVS Pharmacy, 4610, Centre Avenue, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/172680046&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Chemist&#x27;
+			[31] link &#x27;CVS Pharmacy, Coltart Avenue, Oakland, Central Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/9689016649&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[32] link &quot;Wilson&#x27;s Pharmacy, 4101, Penn Avenue, Central Lawrenceville, Pittsburgh, Allegheny County, 15224, United States&quot;, url=&#x27;http://10.141.10.6:3000/node/3628033611&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[33] link &#x27;Giant Eagle Pharmacy, 910, Freeport Road, Lincoln-Lemington-Belmar, Pittsburgh, Allegheny County, 15238, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5171799990&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[34] link &#x27;Hilltop Pharmacy, 818, East Warrington Avenue, Allentown, Pittsburgh, Allegheny County, 15210, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5553630802&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=7135429%2C246383%2C549542%2C144879%2C1384698%2C7128499%2C5185538%2C490336%2C588518%2C612964&amp;maxlat=40.44993553332721&amp;maxlon=-79.934720993042&amp;minlat=40.43907606229298&amp;minlon=-79.95467662811281&amp;query=pharmacy%2C+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145729/197624.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145730/197624.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145729/197625.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145730/197625.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145729/197623.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145730/197623.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145728/197624.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145731/197624.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145728/197625.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145731/197625.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145729/197626.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145730/197626.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145728/197623.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145731/197623.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145728/197626.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145731/197626.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_4.png' style='width:50vw; height:auto;'/>
+
+    <div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Jump Action</pre></div><div class='parsed_action' style='background-color:orange'><pre>[B]goto('http://10.141.10.6:3000/#map=7/42.896/-75.108')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_5.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The page is the OpenStreetMap map interface.  
+- The search textbox has ID `2` and is currently focused.  
+- The map is centered at latitude 42.896, longitude -75.108 (Ithaca, NY).  
+- No results are currently displayed from the search.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To find a pharmacy near Carnegie Mellon University, I first need to navigate the map to the correct location: Pittsburgh, PA. Searching for “Carnegie Mellon University Pittsburgh” will center the map on the campus. After that, I will use the search box again for &quot;pharmacy&quot; to locate nearby pharmacies.</pre></div><div class='parsed_action' style='background-color:orange'><pre>[B]fill('2', 'Carnegie Mellon University Pittsburgh', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447>http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Carnegie Mellon University Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=16/40.4445/-79.9447&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=16/40.4445/-79.9447&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=16/40.4445/-79.9447&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=16/40.4445/-79.9447&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=16/40.4445/-79.9447&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;Carnegie Mellon University Pittsburgh&#x27;, focused
+		StaticText &#x27;Carnegie Mellon University Pittsburgh&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[25] link &#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/relation/2279034&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[26] link &#x27;Carnegie Mellon University, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/25795401&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University Building&#x27;
+			[27] link &#x27;Carnegie Mellon University, 407, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/44157443&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=13476618%2C6537706%2C6860727&amp;maxlat=45.51404592560427&amp;maxlon=-68.07128906250001&amp;minlat=40.16208338164619&amp;minlon=-78.28857421875001&amp;query=Carnegie+Mellon+University+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24705.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	StaticText &#x27;100 m&#x27;
+	StaticText &#x27;500 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_6.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page shows search results for “Carnegie Mellon University, Pittsburgh” with a map centered at coordinates ~40.44 N, –79.94 W. The relevant interactive element for entering a new query is the textbox with ID `1` labeled “Search” and the associated button with ID `2`.    
+No pharmacy markers or distances are present yet; we need to query the map for pharmacies near this campus.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To determine the nearest pharmacy reachable within a 20‑minute walk (~1.6 km), we should:
+1. Enter a new search term “pharmacy” (likely, the map will tag nearby pharmacies).
+2. View the resulting map markers and identify which pharmacy is shortest distance from the campus center (now at ~40.44 N, –79.94 W).  
+Thus the immediate next step is to issue the search for “pharmacy”.</pre></div><div class='parsed_action' style='background-color:orange'><pre>[B]fill('1', 'pharmacy', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=pharmacy#map=19/40.68207/-73.87821>http://10.141.10.6:3000/search?query=pharmacy#map=19/40.68207/-73.87821</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;pharmacy | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#map=19/40.68207/-73.87821&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.68207/-73.87821&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=19/40.68207/-73.87821&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.68207/-73.87821&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.68207/-73.87821&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=19/40.68207/-73.87821&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;pharmacy&#x27;, focused
+		StaticText &#x27;pharmacy&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[25] link &#x27;Pharmacy, 3147, Fulton Street, City Line, Brooklyn, Kings County, City of New York, New York, 11208, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5209294302&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[26] link &#x27;Pharmacy, 3138, Fulton Street, Cypress Hills, Brooklyn, Kings County, City of New York, New York, 11208, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5209293424&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Convenience Store&#x27;
+			[27] link &#x27;Pharmacy, West 19th Street, Chelsea District, Manhattan, New York County, City of New York, New York, 10011, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/6621617757&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[28] link &#x27;Pharmacy, 945, Rosedale Road, South Valley Stream, Town of Hempstead, Nassau County, New York, 11581, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5303668451&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[29] link &#x27;Pharmacy, South Girard Avenue, National Park, Gloucester County, New Jersey, 08063, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/267105141&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=588888%2C593662%2C680588%2C602679%2C9332153&amp;maxlat=40.44996327776342&amp;maxlon=-79.934720993042&amp;minlat=40.43910381121194&amp;minlon=-79.95467662811281&amp;query=pharmacy&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154550/197180.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154551/197180.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154550/197181.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154551/197181.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154550/197179.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154551/197179.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154549/197180.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154552/197180.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154549/197181.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154552/197181.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154550/197182.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154551/197182.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154549/197179.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154552/197179.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154549/197182.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/154552/197182.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_7.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the search results for “pharmacy” but it is centered on coordinates (40.68207, -73.87821) in New York, not on Carnegie Mellon University. The search results list pharmacies in Brooklyn, Manhattan, etc., all irrelevant to the user’s request. The search box with ID `1` and the “Go” button with ID `2` are available on this page, but the map’s center is not at Carnegie Mellon.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The user needs the nearest pharmacy within a 20‑minute walk (~1.6 km) from Carnegie Mellon University in Pittsburgh. Currently the map is focused on the wrong area. We must return to the page that was centered on Carnegie Mellon and then search for pharmacies there. The first step is to navigate back to that page.</pre></div><div class='parsed_action' style='background-color:orange'><pre>[B]go_back()</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447>http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Carnegie Mellon University Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#map=16/40.4445/-79.9447&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=16/40.4445/-79.9447&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=16/40.4445/-79.9447&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=16/40.4445/-79.9447&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=16/40.4445/-79.9447&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=16/40.4445/-79.9447&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;Carnegie Mellon University Pittsburgh&#x27;, focused
+		StaticText &#x27;Carnegie Mellon University Pittsburgh&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[25] link &#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/relation/2279034&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University&#x27;
+			[26] link &#x27;Carnegie Mellon University, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/25795401&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;University Building&#x27;
+			[27] link &#x27;Carnegie Mellon University, 407, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/44157443&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=13476618%2C6537706%2C6860727&amp;maxlat=40.44993528042811&amp;maxlon=-79.934720993042&amp;minlat=40.439075809353014&amp;minlon=-79.95467662811281&amp;query=Carnegie+Mellon+University+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24705.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=Carnegie%20Mellon%20University%20Pittsburgh#&#x27;
+	StaticText &#x27;100 m&#x27;
+	StaticText &#x27;500 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_8.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the search results for “Carnegie Mellon University Pittsburgh” on OpenStreetMap.  
+- Search textbox ID `1` contains the query “Carnegie Mellon University Pittsburgh”.  
+- Clicking the “Go” button or pressing Enter with a modified query can initiate a new search.  
+- The map is currently centered on the Carnegie Mellon campus (lat ≈ 40.4445, lon ≈ -79.9447).</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To identify pharmacies near the campus, we need to refine the search query to include both “pharmacy” and the campus location. The OSM search can accept a combined query such as “pharmacy, Carnegie Mellon University”, which should return pharmacy locations within or near the specified area. This will provide a map view with pharmacy markers close to the campus and a list of results that can be inspected for addresses and proximity.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('1', 'pharmacy, Carnegie Mellon University', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#map=16/40.4445/-79.9447>http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#map=16/40.4445/-79.9447</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;pharmacy, Carnegie Mellon University | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#map=16/40.4445/-79.9447&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[17] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=16/40.4445/-79.9447&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[18] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=16/40.4445/-79.9447&#x27;
+			[19] button &#x27;&#x27;
+			[20] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=16/40.4445/-79.9447&#x27;
+			[21] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=16/40.4445/-79.9447&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[24] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[25] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[26] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[22] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=16/40.4445/-79.9447&#x27;
+			[23] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;pharmacy, Carnegie Mellon University&#x27;, focused
+		StaticText &#x27;pharmacy, Carnegie Mellon University&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[16] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;No results found&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24705.png&#x27;
+	[5] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[6] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[7] button &#x27;Show My Location&#x27;
+	[8] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[9] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[10] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[11] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	StaticText &#x27;100 m&#x27;
+	StaticText &#x27;500 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[13] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[14] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[15] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_9.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The page displays OpenStreetMap search results for “pharmacy, Carnegie Mellon University”. No results are found (“No results found”), so no pharmacy markers appear on the map. The search box (ID 1) contains the query but the “Go” button (ID 2) is unused; pressing Enter after editing would initiate a new search. The map is centered on the CMU campus.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To locate pharmacies within a 20‑minute walk (~1.6 km) of CMU, we need actual pharmacy locations that OSM can find. The exact query “pharmacy, Carnegie Mellon University” returns nothing, likely because OSM doesn’t have a named place for the university. Searching by city (“Pittsburgh”) or adding “near” may yield relevant pharmacies close to the campus.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('2')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#map=16/40.4445/-79.9447>http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#map=16/40.4445/-79.9447</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;pharmacy, Carnegie Mellon University | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#map=16/40.4445/-79.9447&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[17] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=16/40.4445/-79.9447&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[18] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=16/40.4445/-79.9447&#x27;
+			[19] button &#x27;&#x27;
+			[20] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=16/40.4445/-79.9447&#x27;
+			[21] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=16/40.4445/-79.9447&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[24] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[25] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[26] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[22] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=16/40.4445/-79.9447&#x27;
+			[23] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;pharmacy, Carnegie Mellon University&#x27;
+		StaticText &#x27;pharmacy, Carnegie Mellon University&#x27;
+	[2] button &#x27;Go&#x27;, focused
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[16] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;No results found&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18214/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18213/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18215/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24704.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24703.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18212/24705.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/16/18216/24705.png&#x27;
+	[5] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[6] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[7] button &#x27;Show My Location&#x27;
+	[8] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[9] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[10] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[11] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Carnegie%20Mellon%20University#&#x27;
+	StaticText &#x27;100 m&#x27;
+	StaticText &#x27;500 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[13] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[14] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[15] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_10.png' style='width:50vw; height:auto;'/>
+
+    <div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Jump Action</pre></div><div class='parsed_action' style='background-color:orange'><pre>[B]goto('http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#map=19/40.45060/-79.93526')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#map=19/40.45060/-79.93526>http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#map=19/40.45060/-79.93526</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;pharmacy, Pittsburgh | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#map=19/40.45060/-79.93526&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[19] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=19/40.45060/-79.93526&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[20] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=19/40.45060/-79.93526&#x27;
+			[21] button &#x27;&#x27;
+			[22] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=19/40.45060/-79.93526&#x27;
+			[23] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=19/40.45060/-79.93526&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[24] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2Fsearch%3Fquery%3Dpharmacy%252C%2520Pittsburgh#map=19/40.45060/-79.93526&#x27;
+			[25] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[2] textbox &#x27;Search&#x27; value=&#x27;pharmacy, Pittsburgh&#x27;, focused
+		StaticText &#x27;pharmacy, Pittsburgh&#x27;
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[5] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[18] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[26] link &quot;Schiller&#x27;s Pharmacy, 811, South Aiken Avenue, Shadyside, Pittsburgh, Allegheny County, 15232, United States&quot;, url=&#x27;http://10.141.10.6:3000/way/183007767&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[27] link &#x27;CVS Pharmacy, 5600, Wilkins Avenue, Squirrel Hill, Squirrel Hill North, Pittsburgh, Allegheny County, 15217, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/1371572673&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[28] link &quot;Wilson&#x27;s Pharmacy, 4101, Penn Avenue, Central Lawrenceville, Pittsburgh, Allegheny County, 15224, United States&quot;, url=&#x27;http://10.141.10.6:3000/node/3628033611&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[29] link &#x27;Giant Eagle Pharmacy, 1901, Murray Avenue, Squirrel Hill South, Pittsburgh, Allegheny County, 15217, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/4960676734&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[30] link &#x27;Giant Eagle Pharmacy, 910, Freeport Road, Lincoln-Lemington-Belmar, Pittsburgh, Allegheny County, 15238, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5171799990&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[31] link &#x27;Hilltop Pharmacy, 818, East Warrington Avenue, Allentown, Pittsburgh, Allegheny County, 15210, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5553630802&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[32] link &#x27;CVS Pharmacy, 500, Brookline Boulevard, Brookline Business District, Pittsburgh, Allegheny County, 15226, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/5554026990&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[33] link &#x27;CVS Pharmacy, Forbes Avenue, Oakland, Central Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/312632774&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Pharmacy&#x27;
+			[34] link &#x27;University Pharmacy, 4200, Fifth Avenue, North Oakland, Pittsburgh, Allegheny County, 15260, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/8010585574&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Chemist&#x27;
+			[35] link &#x27;CVS Pharmacy, 500, Brookline Boulevard, Brookline Business District, Pittsburgh, Allegheny County, 15226, United States&#x27;, url=&#x27;http://10.141.10.6:3000/way/534072046&#x27;
+	[6] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=7135429%2C246383%2C490336%2C549542%2C588518%2C612964%2C607597%2C144879%2C1384698%2C10620526&amp;maxlat=40.451278303614544&amp;maxlon=-79.93401288986207&amp;minlat=40.449920992803115&amp;minlon=-79.93650734424591&amp;query=pharmacy%2C+Pittsburgh&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145729/197624.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145730/197624.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145729/197625.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145730/197625.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145729/197623.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145730/197623.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145728/197624.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145731/197624.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145728/197625.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145731/197625.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145729/197626.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145730/197626.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145728/197623.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145731/197623.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145728/197626.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/19/145731/197626.png&#x27;
+	[7] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[8] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[9] button &#x27;Show My Location&#x27;
+	[10] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[11] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[12] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=pharmacy%2C%20Pittsburgh#&#x27;
+	StaticText &#x27;20 m&#x27;
+	StaticText &#x27;50 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[15] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[16] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[17] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_236/screenshots/step_11.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The page shows search results for “pharmacy, Pittsburgh” centered on Carnegie Mellon University (40.4445 N, −79.9447 W). The results list several pharmacy entries with full addresses. The nearest located pharmacy is:
+
+- **Schiller&#x27;s Pharmacy, 811 South Aiken Avenue, Shadyside, Pittsburgh, Allegheny County, 15232, United States** (link ID 25).
+
+Given the proximity of Shadyside to the CMU campus (~0.7 km / ~8 min walk), it falls well within a 20‑minute walk.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The list is sorted by relevance to the query “pharmacy, Pittsburgh”. The first result typically corresponds to the closest location. The address matches a pharmacy in Shadyside, which is adjacent to CMU. Walking distance is about 0.7 km, comfortably under the 1.6 km (20‑min) radius.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop("Schiller's Pharmacy, 811 South Aiken Avenue, Shadyside, Pittsburgh, Allegheny County,\u202f15232, United States")</pre></div></div>
+
+    </body>
+</html>

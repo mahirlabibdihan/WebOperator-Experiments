@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>View list of the most recent open issues</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://127.0.0.1:8023/primer/design>http://127.0.0.1:8023/primer/design</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Primer / design · GitLab&#x27;, focused, url=&#x27;http://127.0.0.1:8023/primer/design&#x27;
+	banner &#x27;&#x27;
+		[1] link &#x27;Skip to content&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design#content-body&#x27;
+		StaticText &#x27;GitLab&#x27;
+		[2] link &#x27;Dashboard&#x27;, url=&#x27;http://127.0.0.1:8023/&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[20] button &#x27;&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[21] textbox &#x27;Search GitLab&#x27;
+				StaticText &#x27;/&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[22] link &#x27;Create new...&#x27;, url=&#x27;http://127.0.0.1:8023/projects/new&#x27;
+			listitem &#x27;&#x27;
+				[23] link &#x27;Issues&#x27;, url=&#x27;http://127.0.0.1:8023/dashboard/issues?assignee_username=byteblaze&#x27;
+			listitem &#x27;&#x27;
+				[24] link &#x27;Merge requests&#x27;, url=&#x27;http://127.0.0.1:8023/dashboard/merge_requests?assignee_username=byteblaze&#x27;
+			listitem &#x27;&#x27;
+				[25] link &#x27;To-Do List&#x27;, url=&#x27;http://127.0.0.1:8023/dashboard/todos&#x27;
+					StaticText &#x27;5&#x27;
+			listitem &#x27;&#x27;
+				[26] link &#x27;Help&#x27;, url=&#x27;http://127.0.0.1:8023/help&#x27;
+			listitem &#x27;&#x27;
+				[27] link &#x27;Byte Blaze&#x27;, url=&#x27;http://127.0.0.1:8023/byteblaze&#x27;
+					image &#x27;Byte Blaze&#x27;, url=&#x27;https://www.gravatar.com/avatar/99a4297c867eada2606b9b6973f081f9?s=48&amp;d=identicon&#x27;
+	complementary &#x27;Project navigation&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;design&#x27;
+				[28] link &#x27;design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design&#x27;
+					StaticText &#x27;D&#x27;
+			listitem &#x27;&#x27;
+				[29] link &#x27;Project information&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/activity&#x27;
+			listitem &#x27;&#x27;
+				[30] link &#x27;Repository&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/tree/main&#x27;
+			listitem &#x27;&#x27;
+				[31] link &#x27;Issues&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues&#x27;
+					StaticText &#x27;21&#x27;
+			listitem &#x27;&#x27;
+				[32] link &#x27;Merge requests&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/merge_requests&#x27;
+					StaticText &#x27;16&#x27;
+			listitem &#x27;&#x27;
+				[33] link &#x27;CI/CD&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/pipelines&#x27;
+			listitem &#x27;&#x27;
+				[34] link &#x27;Security &amp; Compliance&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/security/configuration&#x27;
+			listitem &#x27;&#x27;
+				[35] link &#x27;Deployments&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/environments&#x27;
+			listitem &#x27;&#x27;
+				[36] link &#x27;Packages and registries&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/packages&#x27;
+			listitem &#x27;&#x27;
+				[37] link &#x27;Infrastructure&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/clusters&#x27;
+			listitem &#x27;&#x27;
+				[38] link &#x27;Monitor&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/metrics&#x27;
+			listitem &#x27;&#x27;
+				[39] link &#x27;Analytics&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/value_stream_analytics&#x27;
+			listitem &#x27;&#x27;
+				[40] link &#x27;Wiki&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/wikis/home&#x27;
+			listitem &#x27;&#x27;
+				[41] link &#x27;Snippets&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/snippets&#x27;
+		[3] button &#x27;Collapse sidebar&#x27;
+	alert &#x27;&#x27;, live=&#x27;assertive&#x27;, atomic, relevant=&#x27;additions text&#x27;
+		[4] button &#x27;Dismiss&#x27;
+		alert &#x27;&#x27;, live=&#x27;assertive&#x27;, atomic, relevant=&#x27;additions text&#x27;
+			StaticText &quot;You can&#x27;t push or pull repositories using SSH until you add an SSH key to your profile.&quot;
+			[17] link &#x27;Add SSH key&#x27;, url=&#x27;http://127.0.0.1:8023/-/profile/keys&#x27;
+			[18] button &quot;Don&#x27;t show again&quot;
+	navigation &#x27;Breadcrumbs&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[42] link &#x27;Primer&#x27;, url=&#x27;http://127.0.0.1:8023/primer&#x27;
+			listitem &#x27;&#x27;
+				[43] link &#x27;design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design&#x27;
+	main &#x27;&#x27;
+		StaticText &#x27;D&#x27;
+		heading &#x27;design&#x27;
+		StaticText &#x27;Project ID: 180&#x27;
+		[5] button &#x27;Copy project ID&#x27;, live=&#x27;polite&#x27;, relevant=&#x27;additions text&#x27;
+		[6] link &#x27;Leave project&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/project_members/leave&#x27;
+		[7] button &#x27;&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		[8] button &#x27;Star&#x27;
+		[9] link &#x27;21&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/starrers&#x27;
+		[10] link &#x27;Fork&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/forks/new&#x27;
+		[11] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/forks&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[48] link &#x27;921 Commits&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/commits/main&#x27;
+						[54] strong &#x27;&#x27;
+							StaticText &#x27;921&#x27;
+				listitem &#x27;&#x27;
+					[49] link &#x27;38 Branches&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/branches&#x27;
+						[55] strong &#x27;&#x27;
+							StaticText &#x27;38&#x27;
+				listitem &#x27;&#x27;
+					[50] link &#x27;0 Tags&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/tags&#x27;
+						[56] strong &#x27;&#x27;
+							StaticText &#x27;0&#x27;
+				listitem &#x27;&#x27;
+					[51] strong &#x27;&#x27;
+						StaticText &#x27;97.8 MB&#x27;
+					StaticText &#x27;Project Storage&#x27;
+		paragraph &#x27;&#x27;
+			StaticText &#x27;Primer Design Guidelines&#x27;
+		status &#x27;&#x27;, live=&#x27;polite&#x27;, atomic, relevant=&#x27;additions text&#x27;
+		[12] button &#x27;main&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		navigation &#x27;Files breadcrumb&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[52] link &#x27;design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/tree/main/&#x27;
+				listitem &#x27;&#x27;
+					StaticText &#x27;/&#x27;
+					[53] button &#x27;Add to tree&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		[13] link &#x27;Find file&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/find_file/main&#x27;
+		[14] link &#x27;Web IDE&#x27;, url=&#x27;http://127.0.0.1:8023/-/ide/project/primer/design/edit/main/-/&#x27;
+		[15] button &#x27;Download&#x27;
+			StaticText &#x27;Select Archive Format&#x27;
+		[16] link &#x27;Clone&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design#&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[44] link &#x27;README&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/README.md&#x27;
+			listitem &#x27;&#x27;
+				[45] link &#x27;MIT License&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/LICENSE&#x27;
+			listitem &#x27;&#x27;
+				[46] link &#x27;CONTRIBUTING&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/CONTRIBUTING.md&#x27;
+		table &#x27;Files, directories, and submodules in the path / for commit reference main&#x27;, live=&#x27;polite&#x27;, relevant=&#x27;additions text&#x27;
+			rowgroup &#x27;&#x27;
+				row &#x27;&#x27;
+					columnheader &#x27;Name&#x27;
+					columnheader &#x27;Last commit&#x27;
+					columnheader &#x27;Last update&#x27;
+			rowgroup &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;.github&#x27;
+						[57] link &#x27;.github&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/tree/main/.github&#x27;
+					cell &#x27;Loading&#x27;
+						image &#x27;Loading&#x27;
+					cell &#x27;Loading&#x27;
+						image &#x27;Loading&#x27;
+				row &#x27;&#x27;
+					cell &#x27;content&#x27;
+						[58] link &#x27;content&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/tree/main/content&#x27;
+					cell &#x27;Loading&#x27;
+						image &#x27;Loading&#x27;
+					cell &#x27;Loading&#x27;
+						image &#x27;Loading&#x27;
+				row &#x27;&#x27;
+					cell &#x27;docs&#x27;
+						[59] link &#x27;docs&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/tree/main/docs&#x27;
+					cell &#x27;Loading&#x27;
+						image &#x27;Loading&#x27;
+					cell &#x27;Loading&#x27;
+						image &#x27;Loading&#x27;
+				row &#x27;&#x27;
+					cell &#x27;src&#x27;
+						[60] link &#x27;src&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/tree/main/src&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;.eslintignore&#x27;
+						[61] link &#x27;.eslintignore&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/.eslintignore&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;.eslintrc.json&#x27;
+						[62] link &#x27;.eslintrc.json&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/.eslintrc.json&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;.gitignore&#x27;
+						[63] link &#x27;.gitignore&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/.gitignore&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;.markdownlint-cli2.cjs&#x27;
+						[64] link &#x27;.markdownlint-cli2.cjs&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/.markdownlint-cli2.cjs&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;.nvmrc&#x27;
+						[65] link &#x27;.nvmrc&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/.nvmrc&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;CODE_OF_CONDUCT.md&#x27;
+						[66] link &#x27;CODE_OF_CONDUCT.md&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/CODE_OF_CONDUCT.md&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;CONTRIBUTING.md&#x27;
+						[67] link &#x27;CONTRIBUTING.md&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/CONTRIBUTING.md&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;LICENSE&#x27;
+						[68] link &#x27;LICENSE&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/LICENSE&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;README.md&#x27;
+						[69] link &#x27;README.md&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/README.md&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;babel-defines.js&#x27;
+						[70] link &#x27;babel-defines.js&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/babel-defines.js&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;gatsby-config.js&#x27;
+						[71] link &#x27;gatsby-config.js&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/gatsby-config.js&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;gatsby-node.js&#x27;
+						[72] link &#x27;gatsby-node.js&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/gatsby-node.js&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;package-lock.json&#x27;
+						[73] link &#x27;package-lock.json&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/package-lock.json&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;package.json&#x27;
+						[74] link &#x27;package.json&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/package.json&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;prettier.config.js&#x27;
+						[75] link &#x27;prettier.config.js&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/prettier.config.js&#x27;
+							SvgRoot &#x27;&#x27;
+								group &#x27;prettier-icon-dark&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+				row &#x27;&#x27;
+					cell &#x27;yarn.lock&#x27;
+						[76] link &#x27;yarn.lock&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/yarn.lock&#x27;
+					cell &#x27;&#x27;
+					cell &#x27;&#x27;
+		article &#x27;&#x27;
+			[19] link &#x27;README.md&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/blob/main/README.md&#x27;
+				[47] strong &#x27;&#x27;
+					StaticText &#x27;README.md&#x27;
+			status &#x27;&#x27;, live=&#x27;polite&#x27;, atomic, relevant=&#x27;additions text&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_46/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the repository “primer/design” on GitLab. In the sidebar (complementary section), an element with ID `31` is a link titled &quot;Issues&quot; that leads to the repository’s issue tracker.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The goal is to view the most recent open issues. Navigating to the Issues page is the first required step. The &quot;Issues&quot; link is already present and correctly identified; no ambiguity about its purpose.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('31')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://127.0.0.1:8023/primer/design/-/issues>http://127.0.0.1:8023/primer/design/-/issues</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Issues · Primer / design · GitLab&#x27;, focused, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues&#x27;
+	banner &#x27;&#x27;
+		[1] link &#x27;Skip to content&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues#content-body&#x27;
+		StaticText &#x27;GitLab&#x27;
+		[2] link &#x27;Dashboard&#x27;, url=&#x27;http://127.0.0.1:8023/&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[18] button &#x27;&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[19] textbox &#x27;Search GitLab&#x27;
+				StaticText &#x27;/&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[20] link &#x27;Create new...&#x27;, url=&#x27;http://127.0.0.1:8023/projects/new&#x27;
+			listitem &#x27;&#x27;
+				[21] link &#x27;Issues&#x27;, url=&#x27;http://127.0.0.1:8023/dashboard/issues?assignee_username=byteblaze&#x27;
+			listitem &#x27;&#x27;
+				[22] link &#x27;Merge requests&#x27;, url=&#x27;http://127.0.0.1:8023/dashboard/merge_requests?assignee_username=byteblaze&#x27;
+			listitem &#x27;&#x27;
+				[23] link &#x27;To-Do List&#x27;, url=&#x27;http://127.0.0.1:8023/dashboard/todos&#x27;
+					StaticText &#x27;5&#x27;
+			listitem &#x27;&#x27;
+				[24] link &#x27;Help&#x27;, url=&#x27;http://127.0.0.1:8023/help&#x27;
+			listitem &#x27;&#x27;
+				[25] link &#x27;Byte Blaze&#x27;, url=&#x27;http://127.0.0.1:8023/byteblaze&#x27;
+					image &#x27;Byte Blaze&#x27;, url=&#x27;https://www.gravatar.com/avatar/99a4297c867eada2606b9b6973f081f9?s=48&amp;d=identicon&#x27;
+	complementary &#x27;Project navigation&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;design&#x27;
+				[26] link &#x27;design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design&#x27;
+					StaticText &#x27;D&#x27;
+			listitem &#x27;&#x27;
+				[27] link &#x27;Project information&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/activity&#x27;
+			listitem &#x27;&#x27;
+				[28] link &#x27;Repository&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/tree/main&#x27;
+			listitem &#x27;&#x27;
+				[29] link &#x27;Issues&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues&#x27;
+					StaticText &#x27;21&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[110] link &#x27;Issues&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues&#x27;
+							StaticText &#x27;List&#x27;
+					listitem &#x27;&#x27;
+						[111] link &#x27;Boards&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/boards&#x27;
+					listitem &#x27;&#x27;
+						[112] link &#x27;Service Desk&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/service_desk&#x27;
+					listitem &#x27;&#x27;
+						[113] link &#x27;Milestones&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/milestones&#x27;
+			listitem &#x27;&#x27;
+				[30] link &#x27;Merge requests&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/merge_requests&#x27;
+					StaticText &#x27;16&#x27;
+			listitem &#x27;&#x27;
+				[31] link &#x27;CI/CD&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/pipelines&#x27;
+			listitem &#x27;&#x27;
+				[32] link &#x27;Security &amp; Compliance&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/security/configuration&#x27;
+			listitem &#x27;&#x27;
+				[33] link &#x27;Deployments&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/environments&#x27;
+			listitem &#x27;&#x27;
+				[34] link &#x27;Packages and registries&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/packages&#x27;
+			listitem &#x27;&#x27;
+				[35] link &#x27;Infrastructure&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/clusters&#x27;
+			listitem &#x27;&#x27;
+				[36] link &#x27;Monitor&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/metrics&#x27;
+			listitem &#x27;&#x27;
+				[37] link &#x27;Analytics&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/value_stream_analytics&#x27;
+			listitem &#x27;&#x27;
+				[38] link &#x27;Wiki&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/wikis/home&#x27;
+			listitem &#x27;&#x27;
+				[39] link &#x27;Snippets&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/snippets&#x27;
+		[3] button &#x27;Collapse sidebar&#x27;
+	navigation &#x27;Breadcrumbs&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[40] link &#x27;Primer&#x27;, url=&#x27;http://127.0.0.1:8023/primer&#x27;
+			listitem &#x27;&#x27;
+				[41] link &#x27;design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design&#x27;
+			listitem &#x27;&#x27;
+				[42] link &#x27;Issues&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues&#x27;
+	main &#x27;&#x27;
+		tablist &#x27;&#x27;, multiselectable=False, orientation=&#x27;horizontal&#x27;
+			tab &#x27;Open 21&#x27;, selected=True, controls=&#x27;__BVID__9&#x27;
+			tab &#x27;Closed 35&#x27;, selected=False
+			tab &#x27;All 56&#x27;, selected=False
+		tabpanel &#x27;Open 21&#x27;
+		[4] link &#x27;Subscribe to RSS feed&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues.atom?feed_token=TMN_bBn9Z48qVbUFZV45&#x27;
+		[5] link &#x27;Subscribe to calendar&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues.ics?due_date=next_month_and_previous_two_weeks&amp;feed_token=TMN_bBn9Z48qVbUFZV45&amp;sort=closest_future_date&#x27;
+		group &#x27;&#x27;
+			[9] button &#x27;Export as CSV&#x27;
+			[10] button &#x27;Import issues&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		[6] button &#x27;Edit issues&#x27;
+		[7] link &#x27;New issue&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/new&#x27;
+		group &#x27;&#x27;
+			[11] button &#x27;Toggle history&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+			[12] textbox &#x27;Search or filter results...&#x27;
+			[13] button &#x27;Search&#x27;
+		group &#x27;&#x27;
+			[14] button &#x27;Created date&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+			[15] button &#x27;Sort direction: Descending&#x27;
+		complementary &#x27;&#x27;, live=&#x27;polite&#x27;, relevant=&#x27;additions text&#x27;
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				[43] link &#x27;Incorrect path (URL) to `css-utilities` under `../design/foundations`&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/385&#x27;
+				StaticText &#x27;Issue #385  created 2 years ago by&#x27;
+				[44] link &#x27;eaccmk&#x27;, url=&#x27;http://127.0.0.1:8023/eaccmk&#x27;
+				StaticText &#x27;&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[114] link &#x27;1&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/385#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[45] link &quot;Spinners: Create guidelines for using the correct size in it&#x27;s context&quot;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/372&#x27;
+				StaticText &#x27;Issue #372  created 2 years ago by&#x27;
+				[46] link &#x27;Maxime De Greve&#x27;, url=&#x27;http://127.0.0.1:8023/maximedegreve&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[83] link &#x27;area: design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20design&#x27;
+					[84] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[115] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/372#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[47] link &#x27;Truncation page has been removed, but not from navigation menu&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/334&#x27;
+				StaticText &#x27;Issue #334  created 2 years ago by&#x27;
+				[48] link &#x27;Pavel Keyzik&#x27;, url=&#x27;http://127.0.0.1:8023/pavelkeyzik&#x27;
+				StaticText &#x27;&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[116] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/334#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[49] link &#x27;Clarify usage of flash alert&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/316&#x27;
+				StaticText &#x27;Issue #316  created 3 years ago by&#x27;
+				[50] link &#x27;Lukas Oppermann&#x27;, url=&#x27;http://127.0.0.1:8023/lukasoppermann&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[85] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+					[86] link &#x27;effort: low&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=effort%3A%20low&#x27;
+					[87] link &#x27;type: bug 🐞&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=type%3A%20bug%20%F0%9F%90%9E&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[117] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/316#notes&#x27;
+				StaticText &#x27;updated 3 years ago&#x27;
+			listitem &#x27;&#x27;
+				[51] link &#x27;Link to Primer Mobile Figma library is broken&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/310&#x27;
+				StaticText &#x27;Issue #310  created 3 years ago by&#x27;
+				[52] link &#x27;samhenrigold&#x27;, url=&#x27;http://127.0.0.1:8023/samhenrigold&#x27;
+				StaticText &#x27;&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[118] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/310#notes&#x27;
+				StaticText &#x27;updated 3 years ago&#x27;
+			listitem &#x27;&#x27;
+				[53] link &#x27;Add guidelines for loading patterns 🔄&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/300&#x27;
+				StaticText &#x27;Issue #300  created 3 years ago by&#x27;
+				[54] link &#x27;Maxime De Greve&#x27;, url=&#x27;http://127.0.0.1:8023/maximedegreve&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[88] link &#x27;area: accessibility&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20accessibility&#x27;
+					[89] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[119] link &#x27;1&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/300#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[55] link &#x27;Alert dialog guidelines&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/295&#x27;
+				StaticText &#x27;Issue #295  created 3 years ago by&#x27;
+				[56] link &#x27;Josep Martins&#x27;, url=&#x27;http://127.0.0.1:8023/josepmartins&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[90] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[120] link &#x27;2&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/295#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[57] link &#x27;Improve cancel button guidelines&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/290&#x27;
+				StaticText &#x27;Issue #290  created 3 years ago by&#x27;
+				[58] link &#x27;Maxime De Greve&#x27;, url=&#x27;http://127.0.0.1:8023/maximedegreve&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[91] link &#x27;area: accessibility&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20accessibility&#x27;
+					[92] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[121] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/290#notes&#x27;
+				StaticText &#x27;updated 3 years ago&#x27;
+			listitem &#x27;&#x27;
+				[59] link &#x27;Add guidelines for inputs requiring numbers 🔢&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/288&#x27;
+				StaticText &#x27;Issue #288  created 3 years ago by&#x27;
+				[60] link &#x27;Maxime De Greve&#x27;, url=&#x27;http://127.0.0.1:8023/maximedegreve&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[93] link &#x27;area: accessibility&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20accessibility&#x27;
+					[94] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[122] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/288#notes&#x27;
+				StaticText &#x27;updated 3 years ago&#x27;
+			listitem &#x27;&#x27;
+				[61] link &#x27;ActionList: Needs better guidelines on not using single select items&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/260&#x27;
+				StaticText &#x27;Issue #260  created 3 years ago by&#x27;
+				[62] link &#x27;Maxime De Greve&#x27;, url=&#x27;http://127.0.0.1:8023/maximedegreve&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[95] link &#x27;area: accessibility&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20accessibility&#x27;
+					[96] link &#x27;area: design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20design&#x27;
+					[97] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[123] link &#x27;Assigned to Maxime De Greve&#x27;, url=&#x27;http://127.0.0.1:8023/maximedegreve&#x27;
+							image &#x27;Assigned to Maxime De Greve&#x27;, url=&#x27;https://www.gravatar.com/avatar/7361898b06ace0f771e47787b9f9500f?s=80&amp;d=identicon&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[124] link &#x27;1&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/260#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[63] link &#x27;ActionList: Add guidelines for disabled items and how to hint why they are disabled&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/259&#x27;
+				StaticText &#x27;Issue #259  created 3 years ago by&#x27;
+				[64] link &#x27;Maxime De Greve&#x27;, url=&#x27;http://127.0.0.1:8023/maximedegreve&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[98] link &#x27;area: design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20design&#x27;
+					[99] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[125] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/259#notes&#x27;
+				StaticText &#x27;updated 3 years ago&#x27;
+			listitem &#x27;&#x27;
+				[65] link &#x27;Add lint rule to ensure `&lt;img&gt;` is self closing&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/240&#x27;
+				StaticText &#x27;Issue #240  created 3 years ago by&#x27;
+				[66] link &#x27;Kate Higa&#x27;, url=&#x27;http://127.0.0.1:8023/khiga8&#x27;
+				StaticText &#x27;&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[126] link &#x27;3&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/240#notes&#x27;
+				StaticText &#x27;updated 3 years ago&#x27;
+			listitem &#x27;&#x27;
+				[67] link &#x27;Add clearing guidelines for SelectPanel/SelectMenu with single/multi selections&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/229&#x27;
+				StaticText &#x27;Issue #229  created 3 years ago by&#x27;
+				[68] link &#x27;Maxime De Greve&#x27;, url=&#x27;http://127.0.0.1:8023/maximedegreve&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[100] link &#x27;area: accessibility&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20accessibility&#x27;
+					[101] link &#x27;area: design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20design&#x27;
+					[102] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[127] link &#x27;1&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/229#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[69] link &#x27;Add dialogs to Messaging section&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/105&#x27;
+				StaticText &#x27;Issue #105  created 5 years ago by&#x27;
+				[70] link &#x27;emplums&#x27;, url=&#x27;http://127.0.0.1:8023/emplums&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[103] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[128] link &#x27;Assigned to Inayaili León&#x27;, url=&#x27;http://127.0.0.1:8023/yaili&#x27;
+							image &#x27;Assigned to Inayaili León&#x27;, url=&#x27;https://www.gravatar.com/avatar/6fd58ec67cabc3c08c9d0a553671dd75?s=80&amp;d=identicon&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[129] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/105#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[71] link &#x27;Add documentation on using Flash alerts in dialog components&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/104&#x27;
+				StaticText &#x27;Issue #104  created 5 years ago by&#x27;
+				[72] link &#x27;emplums&#x27;, url=&#x27;http://127.0.0.1:8023/emplums&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[104] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[130] link &#x27;Assigned to Inayaili León&#x27;, url=&#x27;http://127.0.0.1:8023/yaili&#x27;
+							image &#x27;Assigned to Inayaili León&#x27;, url=&#x27;https://www.gravatar.com/avatar/6fd58ec67cabc3c08c9d0a553671dd75?s=80&amp;d=identicon&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[131] link &#x27;2&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/104#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[73] link &#x27;Guidelines should document our take on link targets&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/85&#x27;
+				StaticText &#x27;Issue #85  created 6 years ago by&#x27;
+				[74] link &#x27;Administrator&#x27;, url=&#x27;http://127.0.0.1:8023/root&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[105] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[132] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/85#notes&#x27;
+				StaticText &#x27;updated 5 years ago&#x27;
+			listitem &#x27;&#x27;
+				[75] link &#x27;primer/design Landing Page&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/54&#x27;
+				StaticText &#x27;Issue #54  created 6 years ago by&#x27;
+				[76] link &#x27;Administrator&#x27;, url=&#x27;http://127.0.0.1:8023/root&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[106] link &#x27;area: design&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20design&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[133] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/54#notes&#x27;
+				StaticText &#x27;updated 5 years ago&#x27;
+			listitem &#x27;&#x27;
+				[77] link &#x27;Add info about font usage in Figma&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/44&#x27;
+				StaticText &#x27;Issue #44  created 6 years ago by&#x27;
+				[78] link &#x27;Administrator&#x27;, url=&#x27;http://127.0.0.1:8023/root&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[107] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[134] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/44#notes&#x27;
+				StaticText &#x27;updated 5 years ago&#x27;
+			listitem &#x27;&#x27;
+				[79] link &quot;Path alias doesn&#x27;t work&quot;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/33&#x27;
+				StaticText &#x27;Issue #33  created 6 years ago by&#x27;
+				[80] link &#x27;Administrator&#x27;, url=&#x27;http://127.0.0.1:8023/root&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[108] link &#x27;type: bug 🐞&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=type%3A%20bug%20%F0%9F%90%9E&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[135] link &#x27;0&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/33#notes&#x27;
+				StaticText &#x27;updated 2 years ago&#x27;
+			listitem &#x27;&#x27;
+				[81] link &#x27;Links w/ Octicons&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/30&#x27;
+				StaticText &#x27;Issue #30  created 6 years ago by&#x27;
+				[82] link &#x27;Emily Brick&#x27;, url=&#x27;http://127.0.0.1:8023/emilybrick&#x27;
+				StaticText &#x27;&#x27;
+				group &#x27;Labels&#x27;
+					[109] link &#x27;area: documentation&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues?label_name[]=area%3A%20documentation&#x27;
+				list &#x27;&#x27;
+					listitem &#x27;&#x27;
+					list &#x27;&#x27;
+					listitem &#x27;&#x27;
+						[136] link &#x27;1&#x27;, url=&#x27;http://127.0.0.1:8023/primer/design/-/issues/30#notes&#x27;
+				StaticText &#x27;updated 5 years ago&#x27;
+		group &#x27;&#x27;
+			[16] button &#x27;Prev&#x27;, disabled=True
+			[17] button &#x27;Next&#x27;
+		[8] button &#x27;Show 20 items&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		complementary &#x27;Bulk update&#x27;, live=&#x27;polite&#x27;, relevant=&#x27;additions text&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_46/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the Issues view for Primer design, displaying the “Open” tab with 21 open issues. The sort button shows “Sort direction: Descending,” indicating descending order (most recent first). The top entries (in order) are:
+
+1. **Issue #385** – created 2 years ago, updated 2 years ago.  
+2. **Issue #372** – created 2 years ago, updated 2 years ago.  
+3. **Issue #334** – created 2 years ago, updated 2 years ago.
+
+These are the most recent open issues currently present.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The page already shows the Open issues sorted in descending order by default, and the first few items confirm the state. No further navigation or interaction is required.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop('The current page displays the most recent open issues: #385, #372, and #334, sorted in descending order as requested.')</pre></div></div>
+
+    </body>
+</html>

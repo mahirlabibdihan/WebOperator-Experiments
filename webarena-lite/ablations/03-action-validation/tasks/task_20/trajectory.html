@@ -1,0 +1,939 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>Compare the difference in time for walking and driving route from Randyland to Carnegie Mellon University</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/03-action-validation/tasks/task_20/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the homepage of OpenStreetMap. It provides tools and links for mapping-related functionalities. Relevant to the goal, I observed a link labeled &quot;Find directions between two points&quot; with ID `[4]`. This link likely leads to a directions feature that could calculate walking and driving routes between two specific locations.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The task involves determining and comparing the times for walking and driving routes between Randyland and Carnegie Mellon University. To achieve this, I need to utilize a direction-finding tool. Clicking on the &quot;Find directions between two points&quot; link ([4]) seems to be the most direct way to access such a tool.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('4')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions>http://10.141.10.6:3000/directions</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[25] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[26] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[27] button &#x27;&#x27;
+			[28] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[30] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[31] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[32] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[33] option &#x27;Car (OSRM)&#x27;, selected=True
+			[34] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[21] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[22] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[24] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/03-action-validation/tasks/task_20/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the &quot;Find directions&quot; feature of OpenStreetMap. It includes two textboxes labeled &quot;From&quot; (ID `[2]`) and &quot;To&quot; (ID `[3]`) for specifying start and end locations. There is a dropdown menu (ID `[4]`) showing route options such as &quot;Car (OSRM)&quot;, &quot;Foot (OSRM)&quot;, and &quot;Bicycle (OSRM)&quot;, with &quot;Car (OSRM)&quot; currently selected. A button labeled &quot;Go&quot; (ID `[5]`) can calculate the route once information is entered. These elements are critical for obtaining walking and driving directions.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The goal is to compare the time for walking and driving routes between Randyland and Carnegie Mellon University. To achieve this, I need to input the origin (&quot;Randyland&quot;) into the &quot;From&quot; textbox and the destination (&quot;Carnegie Mellon University&quot;) into the &quot;To&quot; textbox. This form will likely allow me to calculate both walking and driving routes.
+
+The best next step is to start by filling the &quot;From&quot; field with &quot;Randyland&quot;.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'Randyland', False)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions>http://10.141.10.6:3000/directions</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[25] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[26] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[27] button &#x27;&#x27;
+			[28] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[30] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[31] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Randyland&#x27;, focused
+		StaticText &#x27;Randyland&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[32] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[33] option &#x27;Car (OSRM)&#x27;, selected=True
+			[34] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[21] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[22] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[24] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/03-action-validation/tasks/task_20/screenshots/step_2.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the &quot;Find directions&quot; feature of OpenStreetMap. The &quot;From&quot; textbox (ID `[2]`) has been successfully filled with &quot;Randyland&quot;. The &quot;To&quot; textbox (ID `[3]`) is empty and needs to be filled with &quot;Carnegie Mellon University&quot; as the destination. There is also a dropdown menu (ID `[4]`) to select the mode of travel, indicating options for &quot;Car (OSRM)&quot;, &quot;Foot (OSRM)&quot;, and &quot;Bicycle (OSRM)&quot;, with &quot;Car (OSRM)&quot; currently selected. The &quot;Go&quot; button (ID `[5]`) will calculate the route once all fields are correctly filled. These elements are essential for obtaining the driving and walking times required to achieve the goal.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To compare the difference in time for walking and driving routes between Randyland and Carnegie Mellon University, I need to complete the &quot;To&quot; textbox by entering the destination. This step is necessary before proceeding to calculate the directions for both modes of travel. Inputting the destination ensures the direction-finding feature can locate the route and determine the travel times.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('3', 'Carnegie Mellon University', False)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions>http://10.141.10.6:3000/directions</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[26] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[27] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[28] button &#x27;&#x27;
+			[29] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[30] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[31] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[32] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Randyland, 1501, Arch Street, Central Northside, Pittsburgh, Allegheny County, 15212, United States&#x27;
+		StaticText &#x27;Randyland, 1501, Arch Street, Central Northside, Pittsburgh, Allegheny County, 15212, United States&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Carnegie Mellon University&#x27;, focused
+		StaticText &#x27;Carnegie Mellon University&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[33] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[34] option &#x27;Car (OSRM)&#x27;, selected=True
+			[35] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[22] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[24] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[25] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[10] button &#x27;Marker&#x27;
+	[11] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[13] button &#x27;Show My Location&#x27;
+	[14] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[18] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[19] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[20] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[21] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/03-action-validation/tasks/task_20/screenshots/step_3.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the &quot;Find directions&quot; feature of OpenStreetMap. The &quot;From&quot; textbox (ID `[2]`) is filled with &quot;Randyland&quot;, and the &quot;To&quot; textbox (ID `[3]`) is filled with &quot;Carnegie Mellon University&quot;. The dropdown menu (ID `[4]`) currently shows &quot;Car (OSRM)&quot; as the selected transportation mode, with options for &quot;Bicycle (OSRM)&quot; and &quot;Foot (OSRM)&quot; also available. The &quot;Go&quot; button (ID `[5]`) is available to calculate the directions based on the input fields. No results or travel times are displayed yet, as the &quot;Go&quot; button has not been clicked.
+
+For the goal, I need to obtain both walking and driving times for the route between Randyland and Carnegie Mellon University. The dropdown menu allows mode selection, and the &quot;Go&quot; button will likely calculate the route for the selected mode of transportation.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To proceed with the goal of comparing the walking and driving times, I will first calculate the route for the driving mode (current selection &quot;Car (OSRM)&quot;). After clicking &quot;Go&quot; for driving directions, I can later switch to walking mode and repeat the calculation to extract both times for comparison.
+
+Clicking the &quot;Go&quot; button is the logical next step for initiating the driving route calculation.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('5')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#map=14/40.4492/-79.9763>http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#map=14/40.4492/-79.9763</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#map=14/40.4492/-79.9763&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[22] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=14/40.4492/-79.9763&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[23] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=14/40.4492/-79.9763&#x27;
+			[24] button &#x27;&#x27;
+			[25] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=14/40.4492/-79.9763&#x27;
+			[26] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=14/40.4492/-79.9763&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[27] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=14/40.4492/-79.9763&#x27;
+			[28] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Randyland, 1501, Arch Street, Central Northside, Pittsburgh, Allegheny County, 15212, United States&#x27;
+		StaticText &#x27;Randyland, 1501, Arch Street, Central Northside, Pittsburgh, Allegheny County, 15212, United States&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;
+		StaticText &#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[29] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[30] option &#x27;Car (OSRM)&#x27;, selected=True
+			[31] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;, focused
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Directions&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Distance: 8.3km. Time: 0:13.&#x27;
+	table &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;1. Start on Jacksonia Street&#x27;
+			cell &#x27;40m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;2. Turn left onto Veto Street&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;3. Turn left onto Eloise Street&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;4. At the end of the road turn right onto Federal Street&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;5. At the end of the road turn left onto North Commons&#x27;
+			cell &#x27;600m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;6. At the fork turn left onto Sandusky Street&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;7. Turn left onto East General Robinson Street&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;8. Turn right onto Anderson Street&#x27;
+			cell &#x27;110m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;9. Continue on Rachel Carson Bridge&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;10. Continue on 9th Street&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;11. Turn left onto Liberty Avenue&#x27;
+			cell &#x27;60m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;12. Turn right onto Seventh Avenue&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;13. At the fork turn right onto unnamed road&#x27;
+			cell &#x27;100m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;14. Turn right onto Washington Place&#x27;
+			cell &#x27;130m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;15. Turn left onto Centre Avenue&#x27;
+			cell &#x27;3.8km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;16. Turn right onto North Craig Street&#x27;
+			cell &#x27;900m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;17. Turn left onto Forbes Avenue&#x27;
+			cell &#x27;500m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;18. Reach destination&#x27;
+			cell &#x27;&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Directions courtesy of&#x27;
+		[21] link &#x27;OSRM (FOSSGIS)&#x27;, url=&#x27;https://routing.openstreetmap.de/about.html&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4552/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4552/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4551/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4553/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4551/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4553/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4552/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4552/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4551/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4553/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4551/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4553/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4550/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4554/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4550/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4554/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4550/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4554/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4550/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4554/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[8] button &#x27;Marker&#x27;
+	[9] button &#x27;Marker&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.458%2C-80.010%3B40.444%2C-79.943#&#x27;
+	StaticText &#x27;500 m&#x27;
+	StaticText &#x27;2000 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/03-action-validation/tasks/task_20/screenshots/step_4.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page provides the driving route from Randyland to Carnegie Mellon University, specifically highlighting a distance of 8.3 km and a travel time of 13 minutes in a paragraph. This information is extracted accurately. Additionally, there is a mode dropdown menu (ID `[4]`) containing three options: &quot;Car (OSRM)&quot; (currently selected), &quot;Foot (OSRM)&quot;, and &quot;Bicycle (OSRM).&quot; To obtain the walking time, the transportation mode needs to be switched to &quot;Foot (OSRM)&quot; and recalculated using the &quot;Go&quot; button (ID `[5]`).</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The driving time has been successfully calculated. The next step is to determine the walking time to compare both travel times for completing the goal. To calculate the walking route, I must first switch the mode of transportation in the dropdown menu from &quot;Car (OSRM)&quot; to &quot;Foot (OSRM).&quot; This action precedes pressing &quot;Go&quot; to recalculate the route.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>select_option('4', 'Foot (OSRM)')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#map=14/40.4468/-79.9762>http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#map=14/40.4468/-79.9762</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#map=14/40.4468/-79.9762&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[22] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=14/40.4468/-79.9762&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[23] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=14/40.4468/-79.9762&#x27;
+			[24] button &#x27;&#x27;
+			[25] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=14/40.4468/-79.9762&#x27;
+			[26] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=14/40.4468/-79.9762&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[27] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=14/40.4468/-79.9762&#x27;
+			[28] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;Randyland, 1501, Arch Street, Central Northside, Pittsburgh, Allegheny County, 15212, United States&#x27;
+		StaticText &#x27;Randyland, 1501, Arch Street, Central Northside, Pittsburgh, Allegheny County, 15212, United States&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;
+		StaticText &#x27;Carnegie Mellon University, Schenley Drive Extension, North Oakland, Pittsburgh, Allegheny County, 15213, United States&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Foot (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[29] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[30] option &#x27;Car (OSRM)&#x27;, selected=False
+			[31] option &#x27;Foot (OSRM)&#x27;, selected=True
+	[5] button &#x27;Go&#x27;, focused
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Directions&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Distance: 7.8km. Time: 1:45.&#x27;
+	table &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;1. Start on Jacksonia Street&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;2. Turn right onto Arch Street&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;3. Turn left onto Brim Way&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;4. Turn right onto unnamed road&#x27;
+			cell &#x27;110m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;5. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;6. Slight right onto unnamed road&#x27;
+			cell &#x27;120m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;7. Slight right onto unnamed road&#x27;
+			cell &#x27;50m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;8. Turn right onto unnamed road&#x27;
+			cell &#x27;90m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;9. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;10. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;11. Turn right onto Federal Street&#x27;
+			cell &#x27;110m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;12. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;13. Turn right onto unnamed road&#x27;
+			cell &#x27;40m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;14. At the end of the road turn left onto East Ohio Street&#x27;
+			cell &#x27;30m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;15. Turn right onto unnamed road&#x27;
+			cell &#x27;80m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;16. Turn right onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;17. Slight left onto unnamed road&#x27;
+			cell &#x27;700m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;18. Turn right onto 7th Street&#x27;
+			cell &#x27;30m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;19. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;20. Turn right onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;21. Continue on unnamed road&#x27;
+			cell &#x27;500m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;22. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;23. Slight left onto unnamed road&#x27;
+			cell &#x27;80m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;24. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;60m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;25. Turn right onto unnamed road&#x27;
+			cell &#x27;190m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;26. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;27. Turn right onto Washington Place&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;28. Turn left onto Watson Street&#x27;
+			cell &#x27;1400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;29. At the end of the road turn right onto Moultrie Street&#x27;
+			cell &#x27;50m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;30. Turn left onto unnamed road&#x27;
+			cell &#x27;1100m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;31. At the end of the road turn left onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;32. At the end of the road turn right onto unnamed road&#x27;
+			cell &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;33. Slight right onto unnamed road&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;34. Slight right onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;35. Slight left onto unnamed road&#x27;
+			cell &#x27;190m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;36. Continue on unnamed road&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;37. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;38. Turn left onto unnamed road&#x27;
+			cell &#x27;160m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;39. Turn left onto unnamed road&#x27;
+			cell &#x27;80m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;40. Turn left onto unnamed road&#x27;
+			cell &#x27;600m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;41. Turn left onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;42. Turn right onto Forbes Avenue&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;43. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;44. Turn left onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;45. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;46. Turn left onto unnamed road&#x27;
+			cell &#x27;20m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;47. Turn left onto unnamed road&#x27;
+			cell &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;48. Turn right onto unnamed road&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;49. Reach destination&#x27;
+			cell &#x27;&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Directions courtesy of&#x27;
+		[21] link &#x27;OSRM (FOSSGIS)&#x27;, url=&#x27;https://routing.openstreetmap.de/about.html&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4552/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4552/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4551/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4553/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4551/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4553/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4552/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4552/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4551/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4553/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4551/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4553/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4550/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4554/6175.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4550/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4554/6176.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4550/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4554/6174.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4550/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/14/4554/6177.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[8] button &#x27;Marker&#x27;
+	[9] button &#x27;Marker&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_foot&amp;route=40.4579%2C-80.0096%3B40.4442%2C-79.9427#&#x27;
+	StaticText &#x27;500 m&#x27;
+	StaticText &#x27;2000 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/03-action-validation/tasks/task_20/screenshots/step_5.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page shows the walking route from Randyland to Carnegie Mellon University. Key details are displayed in a paragraph: the distance is &quot;7.8 km,&quot; and the travel time is &quot;1 hour 45 minutes&quot;. The transport mode dropdown (ID `[4]`) indicates that &quot;Foot (OSRM)&quot; is the currently selected option. The &quot;Go&quot; button (ID `[5]`) is available for recalculating routes. Additionally, the driving route on a previous page had a distance of &quot;8.3 km&quot; and required &quot;13 minutes&quot; of travel time, which was recorded earlier in Observation #5.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The goal is to compare walking and driving travel times between Randyland and Carnegie Mellon University. Both times have now been successfully extracted:
+- Driving time: 13 minutes.
+- Walking time: 1 hour 45 minutes.
+
+This completes the user&#x27;s objective. Therefore, I will provide the comparison of these two times.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop('The driving route from Randyland to Carnegie Mellon University takes 13 minutes, while the walking route takes 1 hour and 45 minutes.')</pre></div></div>
+
+    </body>
+</html>

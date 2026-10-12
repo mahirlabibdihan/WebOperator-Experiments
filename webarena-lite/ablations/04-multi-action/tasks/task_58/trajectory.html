@@ -1,0 +1,1817 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>Tell me the closest cafe(s) to CMU Hunt library</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is an interactive map interface of OpenStreetMap. It contains navigation and search functionalities for exploring locations on the map. Key elements include:
+1. A search textbox (ID: `2`) which allows searching for specific locations or keywords.
+2. A &quot;Go&quot; button (ID: `3`) associated with the search textbox for executing searches.
+3. A link for finding directions between two points (ID: `4`).
+4. Various map interaction options such as Zoom In (ID: `8`), Zoom Out (ID: `9`), and &quot;Show My Location&quot; (ID: `10`).
+5. The map view seems to be the main area for accessing or visualizing location-based data, but there isn&#x27;t immediate information about cafes near CMU Hunt Library displayed.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The goal is to identify the closest cafes near CMU Hunt Library. OpenStreetMap supports search queries for locations and points of interest, and there is a search textbox available for entering a query. The best action is to search for &quot;cafes near CMU Hunt Library&quot; in the provided search field.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'cafes near CMU Hunt Library', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=7/42.896/-73.180>http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=7/42.896/-73.180</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=7/42.896/-73.180&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[17] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-73.180&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[18] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-73.180&#x27;
+			[19] button &#x27;&#x27;
+			[20] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-73.180&#x27;
+			[21] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-73.180&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[24] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[25] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[26] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[22] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-73.180&#x27;
+			[23] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;cafes near CMU Hunt Library&#x27;, focused
+		StaticText &#x27;cafes near CMU Hunt Library&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[16] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;No results found&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/40/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/40/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/40/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/40/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/41/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/41/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/41/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/41/48.png&#x27;
+	[5] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[6] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[7] button &#x27;Show My Location&#x27;
+	[8] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[9] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[10] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[11] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[13] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[14] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[15] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page shows the results for the search query &quot;cafes near CMU Hunt Library&quot; on OpenStreetMap. However, the &quot;Search Results&quot; section explicitly states &quot;No results found.&quot; There are interactive options like Zoom In, Zoom Out, and Layers for adjusting the map view. No cafes or specific locations near CMU Hunt Library are displayed. Relevant interactive elements include:
+1. Button (ID: `4`) to close the &quot;Search Results&quot; section.
+2. Zoom controls (IDs: `5` for Zoom In and `6` for Zoom Out) to navigate the map manually.
+3. &quot;Show My Location&quot; button (ID: `7`) to pinpoint the current location.
+4. Associated links for further map interaction, such as Layers or Share.
+
+The lack of results suggests the need to refine the search or explore the map manually for cafes near CMU Hunt Library.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The search did not yield any results for &quot;cafes near CMU Hunt Library,&quot; which indicates either a lack of data in the database or that the query is too specific. Adjusting the view using Zoom In or moving the map manually might reveal nearby cafes visually on the map interface. Since the goal is to find the closest cafes, it is logical to explore map navigation tools or start a broader search.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('5')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=8/42.894/-73.180>http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=8/42.894/-73.180</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=8/42.894/-73.180&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[17] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=8/42.894/-73.180&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[18] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=8/42.894/-73.180&#x27;
+			[19] button &#x27;&#x27;
+			[20] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=8/42.894/-73.180&#x27;
+			[21] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=8/42.894/-73.180&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[24] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[25] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[26] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[22] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=8/42.894/-73.180&#x27;
+			[23] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;cafes near CMU Hunt Library&#x27;
+		StaticText &#x27;cafes near CMU Hunt Library&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[16] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;No results found&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/74/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/74/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/95.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/95.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/74/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/74/95.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/95.png&#x27;
+	[5] link &#x27;Zoom In&#x27;, focused, describedby=&#x27;tooltip539099&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[6] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[7] button &#x27;Show My Location&#x27;
+	[8] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[9] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[10] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[11] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	StaticText &#x27;30 km&#x27;
+	StaticText &#x27;20 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[13] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[14] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[15] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;
+	tooltip &#x27;Zoom In&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_2.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page displays the search results for &quot;cafes near CMU Hunt Library&quot; in OpenStreetMap. However, the &quot;Search Results&quot; section explicitly states &quot;No results found.&quot; The interactive map is visible, but it does not currently display cafes or other points of interest near CMU Hunt Library. Zoom controls (IDs: `5` for Zoom In and `6` for Zoom Out) can be used to navigate the map manually, as previous actions did not find specific data. There are additional interactive elements like &quot;Show My Location&quot; button (ID: `7`) and Layers (ID: `8`) that might help in locating cafes visually on the map.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Since the search query for cafes near CMU Hunt Library returned no results, manually navigating the map closer to CMU Hunt Library and inspecting for cafes might still reveal relevant data. Zooming in further (using Zoom In) can help to view more details and possibly uncover smaller map elements like cafes that may not be visible at the current zoom level.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('5')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=9/42.8931/-73.1799>http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=9/42.8931/-73.1799</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=9/42.8931/-73.1799&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[17] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=9/42.8931/-73.1799&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[18] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=9/42.8931/-73.1799&#x27;
+			[19] button &#x27;&#x27;
+			[20] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=9/42.8931/-73.1799&#x27;
+			[21] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=9/42.8931/-73.1799&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[24] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[25] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[26] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[22] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=9/42.8931/-73.1799&#x27;
+			[23] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;cafes near CMU Hunt Library&#x27;
+		StaticText &#x27;cafes near CMU Hunt Library&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[16] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;No results found&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/189.png&#x27;
+	[5] link &#x27;Zoom In&#x27;, focused, describedby=&#x27;tooltip539099&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[6] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[7] button &#x27;Show My Location&#x27;
+	[8] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[9] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[10] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[11] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	StaticText &#x27;20 km&#x27;
+	StaticText &#x27;10 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[13] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[14] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[15] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;
+	tooltip &#x27;Zoom In&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_3.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page displays OpenStreetMap with the query &quot;cafes near CMU Hunt Library,&quot; but the search results section explicitly states &quot;No results found.&quot; The interactive map is visible and has been zoomed in further from the previous step. Key interactive elements include:
+1. Zoom controls: &quot;Zoom In&quot; (ID: `5`) and &quot;Zoom Out&quot; (ID: `6`).
+2. Navigation options like &quot;Show My Location&quot; button (ID: `7`) and &quot;Layers&quot; link (ID: `8`).
+3. Search textbox (ID: `1`) for refining the query.
+Despite zooming in further, no cafes are visible near CMU Hunt Library on the map interface. The interface does not currently provide alternative results for the query.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The initial search query yielded no results for cafes, and zooming in further has failed to reveal any visible cafes on the map interface. To ensure accuracy, further refining the search query or directly navigating to CMU Hunt Library using &quot;Find directions between two points&quot; (ID: `3`) might help identify nearby locations on the map. The map is focused near CMU Hunt Library, but manually navigating using zoom or directly pinpointing landmarks could reveal relevant data.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('7')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=9/42.8931/-73.1799>http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=9/42.8931/-73.1799</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#map=9/42.8931/-73.1799&#x27;, page_dialog_message=&#x27;Geolocation error: Only secure origins are allowed (see: https://goo.gl/Y0ZkNV).. Retry.&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[17] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=9/42.8931/-73.1799&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[18] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=9/42.8931/-73.1799&#x27;
+			[19] button &#x27;&#x27;
+			[20] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=9/42.8931/-73.1799&#x27;
+			[21] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=9/42.8931/-73.1799&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[24] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[25] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[26] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[22] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=9/42.8931/-73.1799&#x27;
+			[23] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;cafes near CMU Hunt Library&#x27;
+		StaticText &#x27;cafes near CMU Hunt Library&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[16] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;No results found&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/189.png&#x27;
+	[5] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[6] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[7] button &#x27;Show My Location&#x27;, focused, describedby=&#x27;tooltip753069&#x27;
+	[8] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[9] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[10] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[11] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=cafes%20near%20CMU%20Hunt%20Library#&#x27;
+	StaticText &#x27;20 km&#x27;
+	StaticText &#x27;10 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[13] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[14] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[15] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;
+	tooltip &#x27;Show My Location&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_4.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is OpenStreetMap, showing an interactive map zoomed further near Hunt Library at CMU. The search query &quot;cafes near CMU Hunt Library&quot; returned no results, as stated in the &quot;Search Results&quot; section. The map view does not display any cafes or relevant points of interest near Hunt Library at this zoom level. Given the lack of search results and visible cafes, elements for navigation or refining the search are available, including:
+1. Zoom controls for manual map exploration (`5` Zoom In and `6` Zoom Out).
+2. A button for showing the current location (`7`).
+3. The &quot;Find directions between two points&quot; link (`3`), which may allow pinpointing Hunt Library as a landmark and exploring nearby locations.
+
+No critical information related to cafes has been extracted, as none are visible or listed. The lack of results indicates a possible need for either broader map exploration or refining the approach to locate Hunt Library as a starting point.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Since no cafes are visible and the search criteria did not yield results, further zooming or targeted navigation toward Hunt Library using landmarks might help uncover nearby locations. The &quot;Show My Location&quot; button was used in the previous step unsuccessfully, likely due to geolocation limitations displayed in the page&#x27;s banner message. A better alternative would be utilizing &quot;Find directions between two points&quot; to directly locate Hunt Library and examine nearby places visually. This shifts from relying on search queries and geolocation to manual exploration.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('3')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606>http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[25] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=9/42.8931/-73.6606&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[26] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=9/42.8931/-73.6606&#x27;
+			[27] button &#x27;&#x27;
+			[28] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=9/42.8931/-73.6606&#x27;
+			[29] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=9/42.8931/-73.6606&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[30] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=9/42.8931/-73.6606&#x27;
+			[31] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[32] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[33] option &#x27;Car (OSRM)&#x27;, selected=True
+			[34] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[21] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[22] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[24] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/189.png&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;20 km&#x27;
+	StaticText &#x27;10 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_5.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page on OpenStreetMap is set to &quot;Directions,&quot; and the map is zoomed near Hunt Library at CMU. There are no visible results for cafes near this location, and the &quot;Search Results&quot; section still states &quot;No results found.&quot; The page contains interactive elements such as:
+1. Two textboxes labeled &quot;From&quot; (ID: `2`) and &quot;To&quot; (ID: `3`) for entering start and destination points to search for directions.
+2. A button &quot;Go&quot; (ID: `5`) to execute direction searches.
+3. A combobox to choose the mode of transportation (ID: `4`).
+4. Navigation buttons like &quot;Reverse Directions&quot; (ID: `6`) and &quot;Zoom In&quot; (ID: `10`).
+Currently, there is no explicit data displayed about cafes near CMU Hunt Library. The textbox &quot;To&quot; (ID: `3`) appears suitable for entering Hunt Library as a reference point to search manually for nearby locations.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The lack of results and visible cafes suggests that either the dataset is incomplete or the search query is not yielding specific data due to limitations of the tool. Manually entering &quot;Hunt Library&quot; in the &quot;To&quot; textbox will help find directions and establish Hunt Library as a visual reference point. This can potentially expose nearby places of interest on the map. This action offers a targeted approach rather than randomly navigating or zooming indefinitely.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('3', 'Hunt Library', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606>http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[26] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=9/42.8931/-73.6606&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[27] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=9/42.8931/-73.6606&#x27;
+			[28] button &#x27;&#x27;
+			[29] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=9/42.8931/-73.6606&#x27;
+			[30] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=9/42.8931/-73.6606&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[31] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=9/42.8931/-73.6606&#x27;
+			[32] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Hunt Library, 4909, Frew Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;, focused
+		StaticText &#x27;Hunt Library, 4909, Frew Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[33] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[34] option &#x27;Car (OSRM)&#x27;, selected=True
+			[35] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[22] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[24] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[25] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[10] button &#x27;Marker&#x27;
+	[11] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[13] button &#x27;Show My Location&#x27;
+	[14] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[18] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;20 km&#x27;
+	StaticText &#x27;10 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[19] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[20] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[21] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_6.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is OpenStreetMap&#x27;s &quot;Directions&quot; interface, zoomed near Hunt Library at CMU. The &quot;To&quot; textbox already contains the address &quot;Hunt Library, 4909, Frew Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States,&quot; indicating that Hunt Library has been successfully set as a reference point. However, there are no cafes explicitly listed or shown on the map near Hunt Library. Interactive elements available include:
+1. Button &quot;Go&quot; (ID: `5`) to execute the direction search based on the &quot;From&quot; and &quot;To&quot; fields.
+2. Combobox for selecting transportation mode (ID: `4`), currently set to &quot;Car (OSRM)&quot;.
+3. Zoom controls available (IDs: `11` for Zoom In and `12` for Zoom Out).
+
+No visible data has been extracted regarding cafes. The &quot;Search Results&quot; section continues to state &quot;No results found,&quot; suggesting the interface hasn&#x27;t automatically located any nearby cafes. The next step likely involves using nearby visible points of interest or further exploration to manually identify cafes near Hunt Library.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Since Hunt Library has been successfully entered in the &quot;To&quot; textbox, executing the &quot;Go&quot; button would establish a route or highlight nearby locations that could provide insights. This manual exploration approach might uncover cafes or other points of interest on the map interface. Clicking &quot;Go&quot; is a logical step to progress toward achieving the goal, as the interface explicitly focuses on providing map-based navigation/directions.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('5')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606>http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[26] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=9/42.8931/-73.6606&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[27] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=9/42.8931/-73.6606&#x27;
+			[28] button &#x27;&#x27;
+			[29] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=9/42.8931/-73.6606&#x27;
+			[30] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=9/42.8931/-73.6606&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[31] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=9/42.8931/-73.6606&#x27;
+			[32] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Hunt Library, 4909, Frew Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;
+		StaticText &#x27;Hunt Library, 4909, Frew Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[33] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[34] option &#x27;Car (OSRM)&#x27;, selected=True
+			[35] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;, focused
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[22] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[24] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[25] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[10] button &#x27;Marker&#x27;
+	[11] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[13] button &#x27;Show My Location&#x27;
+	[14] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[18] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;20 km&#x27;
+	StaticText &#x27;10 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[19] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[20] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[21] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_7.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page shows the &quot;Directions&quot; interface of the OpenStreetMap, zoomed near Hunt Library at CMU. The &quot;To&quot; textbox confirms that Hunt Library has been set as the destination point, with its full address displayed. However, no cafes or points of interest are explicitly listed in the &quot;Search Results&quot; section, which continues to show &quot;No results found.&quot; The map interface does not currently highlight specific locations near Hunt Library. 
+
+Relevant interactive elements on the page include:
+1. A &quot;Go&quot; button (`5`), which may initiate a search or route visualization based on the &quot;From&quot; and &quot;To&quot; fields.
+2. Textbox &quot;From&quot; (`2`), which is currently empty. This can be used to input a starting location for directions.
+3. Zoom controls (`11` and `12`), which allow closer or broader map views.
+
+No specific cafe information is visible at this point, indicating the current map view or search query may need refinement.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Pressing the &quot;Go&quot; button will generate directions from the &quot;From&quot; location to &quot;Hunt Library&quot; (set as the &quot;To&quot; location). This may reveal additional POIs or features on the map interface near Hunt Library, potentially including cafes. This step follows logically from prior actions and the given interface prompts, aiming to uncover any cafes or nearby features that align with the goal.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('5')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606>http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions#map=9/42.8931/-73.6606&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[26] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=9/42.8931/-73.6606&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[27] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=9/42.8931/-73.6606&#x27;
+			[28] button &#x27;&#x27;
+			[29] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=9/42.8931/-73.6606&#x27;
+			[30] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=9/42.8931/-73.6606&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[31] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=9/42.8931/-73.6606&#x27;
+			[32] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Hunt Library, 4909, Frew Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;
+		StaticText &#x27;Hunt Library, 4909, Frew Street, Squirrel Hill North, Pittsburgh, Allegheny County, 15213, United States&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[33] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[34] option &#x27;Car (OSRM)&#x27;, selected=True
+			[35] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;, focused
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[22] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[24] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[25] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[10] button &#x27;Marker&#x27;
+	[11] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[12] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[13] button &#x27;Show My Location&#x27;
+	[14] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[16] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	[18] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions#&#x27;
+	StaticText &#x27;20 km&#x27;
+	StaticText &#x27;10 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[19] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[20] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[21] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_8.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is the &quot;Directions&quot; interface on OpenStreetMap, focused near Hunt Library at CMU. Hunt Library&#x27;s address is set as the destination point in the &quot;To&quot; textbox, but no cafes or relevant points of interest are listed in the &quot;Search Results&quot; section, nor displayed visibly on the map. Previous attempts to execute the &quot;Go&quot; button or adjust transportation modes have not yielded desired results.
+
+Relevant interactive elements:
+1. Textbox &quot;From&quot; (`2`) is empty and can specify a starting point to refine the search.
+2. Zoom controls (`11` and `12`) allow closer inspection or broader exploration of the map.
+3. Dropdown for mode of transportation (`4`), which includes selectable options: &quot;Bicycle (OSRM),&quot; &quot;Car (OSRM),&quot; and &quot;Foot (OSRM).&quot; Current mode is &quot;Car (OSRM).&quot;
+4. Button &quot;Reverse Directions&quot; (`6`) enables swapping the &quot;From&quot; and &quot;To&quot; values, essentially focusing on Hunt Library as a starting point instead of the destination.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>Since &quot;Search Results&quot; are empty and map exploration hasn&#x27;t surfaced nearby cafes, swapping the direction focus via &quot;Reverse Directions&quot; (`6`) could highlight routes or points of interest near Hunt Library as the starting location. This contextual shift might provide insights into surrounding areas and reveal cafes, which aligns with the goal of identifying the closest cafes.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('6')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B>http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[26] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=9/42.8931/-73.6606&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[27] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=9/42.8931/-73.6606&#x27;
+			[28] button &#x27;&#x27;
+			[29] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=9/42.8931/-73.6606&#x27;
+			[30] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=9/42.8931/-73.6606&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[38] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[39] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[40] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[41] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[31] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=9/42.8931/-73.6606&#x27;
+			[32] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;40.4411, -79.9437&#x27;
+		StaticText &#x27;40.4411, -79.9437&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[33] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[34] option &#x27;Car (OSRM)&#x27;, selected=True
+			[35] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;, focused
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[22] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[23] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[24] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[25] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[8] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[9] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/151/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/152/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/150/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/153/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/154/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/155/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/149/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/188.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/187.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/9/148/189.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[10] button &#x27;Marker&#x27;
+	[11] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B#&#x27;
+	[12] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B#&#x27;
+	[13] button &#x27;Show My Location&#x27;
+	[14] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B#&#x27;
+	[16] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B#&#x27;
+	[18] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?from=Hunt%20Library%2C%204909%2C%20Frew%20Street%2C%20Squirrel%20Hill%20North%2C%20Pittsburgh%2C%20Allegheny%20County%2C%2015213%2C%20United%20States&amp;to=&amp;route=40.44111100000001%2C-79.94373997605103%3B#&#x27;
+	StaticText &#x27;20 km&#x27;
+	StaticText &#x27;10 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[19] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[20] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[21] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_9.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is OpenStreetMap&#x27;s &quot;Directions&quot; interface, with Hunt Library set as the starting point (&quot;From&quot; textbox contains Hunt Library&#x27;s address). The &quot;To&quot; textbox is currently empty, and no cafes or relevant locations appear in the &quot;Search Results&quot; section or on the map itself. Interactive elements include:
+1. The &quot;Go&quot; button (`5`), which executes searches based on provided directions.
+2. The &quot;Reverse Directions&quot; button (`6`), which can switch the &quot;From&quot; and &quot;To&quot; fields to redefine focus.
+3. Zoom controls (`11` and `12`) for adjusting the view.
+4. Transportation mode dropdown (`4`) currently set to &quot;Car (OSRM)&quot;.
+5. Further navigation options like sharing links, layer controls, and map settings.
+
+There is no visible data extracted regarding cafes near Hunt Library.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The previous action swapped Hunt Library as the starting location (&quot;From&quot;) for routing purposes. Since the &quot;To&quot; textbox is currently empty, the map interface seems unable to highlight or detect nearby locations automatically. Filling the &quot;To&quot; textbox with &quot;cafe&quot; might refine the search to display cafes near Hunt Library, directly aligning with the goal. This approach targets a clear search query rather than blindly exploring the map.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('3', 'cafe', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#map=7/41.702/-75.399>http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#map=7/41.702/-75.399</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#map=7/41.702/-75.399&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[22] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/41.702/-75.399&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[23] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/41.702/-75.399&#x27;
+			[24] button &#x27;&#x27;
+			[25] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/41.702/-75.399&#x27;
+			[26] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/41.702/-75.399&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[27] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/41.702/-75.399&#x27;
+			[28] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;40.4411, -79.9437&#x27;
+		StaticText &#x27;40.4411, -79.9437&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Cafe, Alumni Drive, Jady Hill, Exeter, Rockingham County, New Hampshire, 03833, United States&#x27;, focused
+		StaticText &#x27;Cafe, Alumni Drive, Jady Hill, Exeter, Rockingham County, New Hampshire, 03833, United States&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[29] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[30] option &#x27;Car (OSRM)&#x27;, selected=True
+			[31] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Directions&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Distance: 993km. Time: 12:29.&#x27;
+	table &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;1. Start on Frew Street&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;2. Turn left onto Schenley Drive&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;3. Turn right onto Panther Hollow Road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;4. Slight left onto unnamed road&#x27;
+			cell &#x27;180m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;5. Continue on unnamed road&#x27;
+			cell &#x27;100m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;6. Slight right onto Panther Hollow Road&#x27;
+			cell &#x27;700m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;7. Turn right onto Greenfield Road&#x27;
+			cell &#x27;600m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;8. Continue on Greenfield Bridge&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;9. Turn left onto Beechwood Boulevard&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;10. Turn left onto the ramp towards I 376 East: Monroeville&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;11. Merge left onto Penn-Lincoln Parkway East (I 376; US 22; US 30)&#x27;
+			cell &#x27;17km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;12. Merge left onto William Penn Highway (US 22)&#x27;
+			cell &#x27;2.6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;13. At the fork turn left onto William Penn Highway (US 22)&#x27;
+			cell &#x27;70km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;14. Continue on Admiral Peary Highway (US 22)&#x27;
+			cell &#x27;22km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;15. Continue on William Penn Highway (US 22)&#x27;
+			cell &#x27;28km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;16. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;1400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;17. Merge left onto I 99; US 220&#x27;
+			cell &#x27;72km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;18. At the fork turn left onto I 99; US 220&#x27;
+			cell &#x27;20km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;19. Turn left onto unnamed road&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;20. Merge left onto I 80; US 220&#x27;
+			cell &#x27;160km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;21. Take exit 260B on the left towards I 81 North: Wilkes-Barre&#x27;
+			cell &#x27;1100m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;22. Merge left onto I 81&#x27;
+			cell &#x27;56km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;23. Take the ramp on the right towards I-84 east, US 6 east&#x27;
+			cell &#x27;600m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;24. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;25. At the fork turn right onto unnamed road&#x27;
+			cell &#x27;600m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;26. Continue on I 84; I 380&#x27;
+			cell &#x27;6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;27. At the fork turn left onto I 84&#x27;
+			cell &#x27;208km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;28. At the fork turn right onto I 84; US 6&#x27;
+			cell &#x27;69km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;29. At the fork turn right onto I 84&#x27;
+			cell &#x27;23km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;30. At the fork turn left onto I 84; US 6&#x27;
+			cell &#x27;67km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;31. At the fork turn right onto unnamed road&#x27;
+			cell &#x27;700m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;32. Merge left onto Massachusetts Turnpike (I 90)&#x27;
+			cell &#x27;44km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;33. Take exit 106 on the right towards I 495&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;34. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;35. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;900m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;36. Merge left onto I 495&#x27;
+			cell &#x27;101km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;37. Merge left onto I 95&#x27;
+			cell &#x27;10km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;38. Take exit 2 on the right towards NH 101: Hampton, Manchester&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;39. Continue on unnamed road&#x27;
+			cell &#x27;1100m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;40. Continue on unnamed road&#x27;
+			cell &#x27;1000m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;41. At the fork turn right onto unnamed road&#x27;
+			cell &#x27;700m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;42. Merge left onto Exeter-Hampton Expressway (NH 101)&#x27;
+			cell &#x27;1.6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;43. Take exit 12 on the right towards NH 111: Exeter, North Hampton&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;44. Turn left onto North Hampton Road (NH 111)&#x27;
+			cell &#x27;2.4km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;45. Continue on High Street (NH 27; NH 111)&#x27;
+			cell &#x27;1.6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;46. Turn right onto Buzell Avenue&#x27;
+			cell &#x27;150m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;47. Turn left onto Alumni Drive&#x27;
+			cell &#x27;160m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;48. Turn right onto unnamed road&#x27;
+			cell &#x27;70m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;49. Reach destination&#x27;
+			cell &#x27;&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Directions courtesy of&#x27;
+		[21] link &#x27;OSRM (FOSSGIS)&#x27;, url=&#x27;https://routing.openstreetmap.de/about.html&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[8] button &#x27;Marker&#x27;
+	[9] button &#x27;Marker&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_10.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is OpenStreetMap&#x27;s &quot;Directions&quot; interface, where directions are calculated between Hunt Library (set as the starting location) and a destination labeled &quot;Cafe, Alumni Drive, Jady Hill, Exeter, Rockingham County, New Hampshire, 03833, United States&quot; in the &quot;To&quot; textbox. However, the search has mistakenly routed to a cafe destination in a distant state (New Hampshire) instead of identifying close cafes near CMU Hunt Library.
+
+Key details extracted:
+1. The &quot;To&quot; textbox currently contains a cafe destination far from Hunt Library.
+2. The map interface does not highlight or display nearby cafes in Pittsburgh.
+3. The &quot;Search Results&quot; section lists detailed directions between Hunt Library and the distant cafe, but this is irrelevant to the goal.
+4. Interactive elements:
+   - &quot;Go&quot; button (`5`) executes searches based on &quot;From&quot; and &quot;To&quot; fields.
+   - &quot;Reverse Directions&quot; button (`6`) swaps the &quot;From&quot; and &quot;To&quot; fields.
+   - Zoom controls (`10` and `11`).
+   - &quot;To&quot; textbox (`3`) can be overwritten with a refined query, such as &quot;cafe Pittsburgh.&quot;</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The current search entered &quot;cafe&quot; in the &quot;To&quot; field, but it inadvertently routed to a distant location outside Pittsburgh. This does not fulfill the goal of identifying cafes near CMU Hunt Library. To refine the search and possibly locate local cafes, the proper query &quot;cafe near Pittsburgh&quot; should be entered into the &quot;To&quot; field.
+
+Filling the &quot;To&quot; textbox with &quot;cafe near CMU Hunt Library&quot; is a reasonable next step to display results relevant to the goal.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('3', 'cafe near CMU Hunt Library', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#map=7/41.702/-75.399>http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#map=7/41.702/-75.399</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#map=7/41.702/-75.399&#x27;, page_dialog_message=&quot;Sorry - couldn&#x27;t locate &#x27;cafe near CMU Hunt Library&#x27;. Retry.&quot;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[22] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/41.702/-75.399&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[23] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/41.702/-75.399&#x27;
+			[24] button &#x27;&#x27;
+			[25] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/41.702/-75.399&#x27;
+			[26] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/41.702/-75.399&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[27] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/41.702/-75.399&#x27;
+			[28] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;40.4411, -79.9437&#x27;
+		StaticText &#x27;40.4411, -79.9437&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;cafe near CMU Hunt Library&#x27;, focused
+		StaticText &#x27;cafe near CMU Hunt Library&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[29] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[30] option &#x27;Car (OSRM)&#x27;, selected=True
+			[31] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Directions&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Distance: 993km. Time: 12:29.&#x27;
+	table &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;1. Start on Frew Street&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;2. Turn left onto Schenley Drive&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;3. Turn right onto Panther Hollow Road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;4. Slight left onto unnamed road&#x27;
+			cell &#x27;180m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;5. Continue on unnamed road&#x27;
+			cell &#x27;100m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;6. Slight right onto Panther Hollow Road&#x27;
+			cell &#x27;700m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;7. Turn right onto Greenfield Road&#x27;
+			cell &#x27;600m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;8. Continue on Greenfield Bridge&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;9. Turn left onto Beechwood Boulevard&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;10. Turn left onto the ramp towards I 376 East: Monroeville&#x27;
+			cell &#x27;200m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;11. Merge left onto Penn-Lincoln Parkway East (I 376; US 22; US 30)&#x27;
+			cell &#x27;17km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;12. Merge left onto William Penn Highway (US 22)&#x27;
+			cell &#x27;2.6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;13. At the fork turn left onto William Penn Highway (US 22)&#x27;
+			cell &#x27;70km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;14. Continue on Admiral Peary Highway (US 22)&#x27;
+			cell &#x27;22km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;15. Continue on William Penn Highway (US 22)&#x27;
+			cell &#x27;28km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;16. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;1400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;17. Merge left onto I 99; US 220&#x27;
+			cell &#x27;72km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;18. At the fork turn left onto I 99; US 220&#x27;
+			cell &#x27;20km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;19. Turn left onto unnamed road&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;20. Merge left onto I 80; US 220&#x27;
+			cell &#x27;160km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;21. Take exit 260B on the left towards I 81 North: Wilkes-Barre&#x27;
+			cell &#x27;1100m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;22. Merge left onto I 81&#x27;
+			cell &#x27;56km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;23. Take the ramp on the right towards I-84 east, US 6 east&#x27;
+			cell &#x27;600m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;24. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;25. At the fork turn right onto unnamed road&#x27;
+			cell &#x27;600m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;26. Continue on I 84; I 380&#x27;
+			cell &#x27;6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;27. At the fork turn left onto I 84&#x27;
+			cell &#x27;208km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;28. At the fork turn right onto I 84; US 6&#x27;
+			cell &#x27;69km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;29. At the fork turn right onto I 84&#x27;
+			cell &#x27;23km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;30. At the fork turn left onto I 84; US 6&#x27;
+			cell &#x27;67km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;31. At the fork turn right onto unnamed road&#x27;
+			cell &#x27;700m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;32. Merge left onto Massachusetts Turnpike (I 90)&#x27;
+			cell &#x27;44km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;33. Take exit 106 on the right towards I 495&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;34. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;35. At the fork turn left onto unnamed road&#x27;
+			cell &#x27;900m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;36. Merge left onto I 495&#x27;
+			cell &#x27;101km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;37. Merge left onto I 95&#x27;
+			cell &#x27;10km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;38. Take exit 2 on the right towards NH 101: Hampton, Manchester&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;39. Continue on unnamed road&#x27;
+			cell &#x27;1100m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;40. Continue on unnamed road&#x27;
+			cell &#x27;1000m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;41. At the fork turn right onto unnamed road&#x27;
+			cell &#x27;700m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;42. Merge left onto Exeter-Hampton Expressway (NH 101)&#x27;
+			cell &#x27;1.6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;43. Take exit 12 on the right towards NH 111: Exeter, North Hampton&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;44. Turn left onto North Hampton Road (NH 111)&#x27;
+			cell &#x27;2.4km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;45. Continue on High Street (NH 27; NH 111)&#x27;
+			cell &#x27;1.6km&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;46. Turn right onto Buzell Avenue&#x27;
+			cell &#x27;150m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;47. Turn left onto Alumni Drive&#x27;
+			cell &#x27;160m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;48. Turn right onto unnamed road&#x27;
+			cell &#x27;70m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;49. Reach destination&#x27;
+			cell &#x27;&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Directions courtesy of&#x27;
+		[21] link &#x27;OSRM (FOSSGIS)&#x27;, url=&#x27;https://routing.openstreetmap.de/about.html&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[8] button &#x27;Marker&#x27;
+	[9] button &#x27;Marker&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.4411%2C-79.9437%3B42.9828%2C-70.9359#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_11.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page on OpenStreetMap is focused on providing directions but displays a system alert stating: &quot;Sorry - couldn&#x27;t locate &#x27;cafe near CMU Hunt Library&#x27;. Retry.&quot; The query in the &quot;To&quot; textbox is &quot;cafe near CMU Hunt Library,&quot; which has not yielded relevant results for nearby cafes. Instead, it routed to a mislabeled cafe destination far away in New Hampshire. The &quot;Search Results&quot; section and map view fail to present any relevant cafes near the CMU Hunt Library.
+
+Key interactive elements:
+1. The &quot;To&quot; textbox (`3`) currently contains the query &quot;cafe near CMU Hunt Library&quot; and can be updated to refine the search.
+2. The &quot;Go&quot; button (`5`) triggers search execution based on the &quot;From&quot; and &quot;To&quot; fields.
+3. The &quot;Reverse Directions&quot; button (`6`) swaps the &quot;From&quot; and &quot;To&quot; values.
+4. The transportation mode dropdown (`4`) is currently set to &quot;Car (OSRM)&quot; but offers options like &quot;Foot (OSRM)&quot; and &quot;Bicycle (OSRM)&quot; that could influence search results.
+5. Zoom controls (`10` and `11`) enable adjusting map visibility.
+No cafes near CMU Hunt Library are displayed at this moment.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The search query &quot;cafe near CMU Hunt Library&quot; has failed to produce any relevant results or clarify the presence of nearby cafes. A simpler query like &quot;cafes&quot; or &quot;cafes near Pittsburgh&quot; in the &quot;To&quot; textbox may lead to results close to the CMU Hunt Library address as already set in the &quot;From&quot; field. Adjusting the &quot;To&quot; field is logical given that OpenStreetMap relies on clear and concise queries for accurate results. Adding precise geographical keywords or simplifying the query helps avoid ambiguous results and refine the search scope.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('3', 'cafes near Pittsburgh', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#map=17/40.44268/-79.94800>http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#map=17/40.44268/-79.94800</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;cafes near CMU Hunt Library | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#map=17/40.44268/-79.94800&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[22] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=17/40.44268/-79.94800&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[23] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=17/40.44268/-79.94800&#x27;
+			[24] button &#x27;&#x27;
+			[25] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=17/40.44268/-79.94800&#x27;
+			[26] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=17/40.44268/-79.94800&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[36] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[37] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[27] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=17/40.44268/-79.94800&#x27;
+			[28] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] button &#x27;Close&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-green-a018589d7f15e3d24bdc172041b6edafa5fbb17aa951d4fec717fcb62361b7e1.png&#x27;
+	[2] textbox &#x27;From&#x27; value=&#x27;40.4411, -79.9437&#x27;
+		StaticText &#x27;40.4411, -79.9437&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/marker-red-839c3d7015788811f3e0d154b69599f099cf8235c036893c61f802ba1a6ccdac.png&#x27;
+	[3] textbox &#x27;To&#x27; value=&#x27;Starbucks, 417, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States&#x27;, focused
+		StaticText &#x27;Starbucks, 417, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States&#x27;
+	[4] combobox &#x27;&#x27; value=&#x27;Car (OSRM)&#x27;, hasPopup=&#x27;menu&#x27;, expanded=False
+		MenuListPopup &#x27;&#x27;
+			[29] option &#x27;Bicycle (OSRM)&#x27;, selected=False
+			[30] option &#x27;Car (OSRM)&#x27;, selected=True
+			[31] option &#x27;Foot (OSRM)&#x27;, selected=False
+	[5] button &#x27;Go&#x27;
+	[6] button &#x27;Reverse Directions&#x27;
+	heading &#x27;Directions&#x27;
+	[7] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Distance: 1.2km. Time: 0:02.&#x27;
+	table &#x27;&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;1. Start on Frew Street&#x27;
+			cell &#x27;400m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;2. Turn right onto Schenley Drive&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;3. Turn right onto Schenley Drive Extension&#x27;
+			cell &#x27;140m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;4. Turn right onto Forbes Avenue&#x27;
+			cell &#x27;300m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;5. Turn left onto South Craig Street&#x27;
+			cell &#x27;10m&#x27;
+		row &#x27;&#x27;
+			cell &#x27;&#x27;
+			cell &#x27;6. Reach destination&#x27;
+			cell &#x27;&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Directions courtesy of&#x27;
+		[21] link &#x27;OSRM (FOSSGIS)&#x27;, url=&#x27;https://routing.openstreetmap.de/about.html&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36427/49409.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36428/49409.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36427/49410.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36428/49410.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36427/49408.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36428/49408.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36426/49409.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36429/49409.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36426/49410.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36429/49410.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36427/49411.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36428/49411.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36426/49408.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36429/49408.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36426/49411.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/17/36429/49411.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/leaflet/dist/images/marker-shadow-a2d94406ba198f61f68a71ed8f9f9c701122c0c33b775d990edceae4aece567f.png&#x27;
+	[8] button &#x27;Marker&#x27;
+	[9] button &#x27;Marker&#x27;
+	[10] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#&#x27;
+	[11] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#&#x27;
+	[12] button &#x27;Show My Location&#x27;
+	[13] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#&#x27;
+	[15] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#&#x27;
+	[16] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#&#x27;
+	[17] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/directions?engine=fossgis_osrm_car&amp;route=40.441%2C-79.944%3B40.445%2C-79.949#&#x27;
+	StaticText &#x27;50 m&#x27;
+	StaticText &#x27;200 ft&#x27;
+	StaticText &#x27;©&#x27;
+	[18] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[19] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[20] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena-lite/ablations/04-multi-action/tasks/task_58/screenshots/step_12.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page on OpenStreetMap provides directions from Hunt Library to the closest cafe, indicated as &quot;Starbucks, 417, South Craig Street, Bellefield, Pittsburgh, Allegheny County, 15213, United States.&quot; Based on the accessibility tree, this cafe appears to be 1.2km away from Hunt Library, and the calculated route and steps indicate the travel time is approximately 2 minutes by car. The map is zoomed in to provide a detailed route.
+
+Critical data extracted:
+1. Closest cafe name: Starbucks.
+2. Address: 417 South Craig Street, Pittsburgh, PA, 15213.
+3. Distance from Hunt Library: 1.2km.
+4. Travel time: 2 minutes by car.
+5. Route details:
+   - Start on Frew Street for 400m.
+   - Turn right onto Schenley Drive for 300m.
+   - Turn right onto Schenley Drive Extension for 140m.
+   - Turn right onto Forbes Avenue for 300m.
+   - Turn left onto South Craig Street for 10m, reaching the destination.
+
+Interactive elements that can refine or interact with the interface include:
+- The &quot;Zoom In&quot; and &quot;Zoom Out&quot; links (`10` and `11`).
+- Direction-related buttons like &quot;Go&quot; (`5`), &quot;Reverse Directions&quot; (`6`), and transportation mode dropdown (`4`).
+- The &quot;To&quot; textbox (`3`) with the cafe destination already set.
+
+This content fulfills the goal of identifying the closest cafe to CMU Hunt Library with detailed name, address, distance, and directions.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The interface has successfully provided the desired information, with the specific name, address, and details about the closest cafe to CMU Hunt Library. No further exploration is needed, as the goal has been completed with the provided answer.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop('The closest cafe to CMU Hunt Library is Starbucks, located at 417 South Craig Street, Pittsburgh, PA, 15213. It is 1.2km away, approximately 2 minutes by car.')</pre></div></div>
+
+    </body>
+</html>

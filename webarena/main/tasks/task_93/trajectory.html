@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .task-step { border: 1px solid #ccc; margin-bottom: 20px; padding: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .task-step h2 { margin-top: 0; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        .task-step h3 { color: #555; margin-top: 15px; margin-bottom: 5px; }
+        .task-step h4 { color: #777; margin-top: 10px; margin-bottom: 5px; font-style: italic;}
+        pre { background-color: #eee; padding: 10px; border-radius: 3px; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9em; margin-top: 5px; }
+        details { margin-top: 10px; border: 1px solid #ddd; border-radius: 3px; background-color: #fff; }
+        summary { cursor: pointer; padding: 8px; background-color: #f8f9fa; font-weight: bold; border-bottom: 1px solid #ddd; }
+        details[open] summary { border-bottom: 1px solid #ddd; }
+        details > pre { border: none; background-color: #fff; padding: 10px 8px; }
+        .response-item-toggle { margin-top: 10px; }
+        .chosen-section { border-left: 5px solid #4CAF50; padding-left: 10px; margin-top: 15px; }
+        .rejected-section { border-left: 5px solid #f44336; padding-left: 10px; margin-top: 15px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
+        .thought-action { background-color: #f0f0f0; padding: 10px; border-radius: 3px; margin-bottom: 10px; border: 1px solid #e0e0e0;}
+        .thought-action h4 { margin-top: 0; color: #666; }
+        .task-container { display: none; }
+        .filter-controls { margin-bottom: 20px; padding: 10px; background-color: #e9ecef; border-radius: 5px; }
+        .filter-controls label { margin-right: 10px; font-weight: bold; }
+        .filter-controls select { padding: 5px; border-radius: 3px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<html>
+    <body>
+     
+     
+     
+     
+     
+     
+     
+    <div class='goal' style='background-color:lightblue'><h2>Goal</h2><p>Which US states border New Hampshire?</p></div>
+<h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/#map=7/42.896/-75.108>http://10.141.10.6:3000/#map=7/42.896/-75.108</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[23] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=7/42.896/-75.108&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[24] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=7/42.896/-75.108&#x27;
+			[25] button &#x27;&#x27;
+			[26] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=7/42.896/-75.108&#x27;
+			[27] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=7/42.896/-75.108&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[35] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[28] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=7/42.896/-75.108&#x27;
+			[29] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[2] textbox &#x27;Search&#x27;, focused
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Welcome to OpenStreetMap!&#x27;
+	[5] button &#x27;Close&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;OpenStreetMap is a map of the world, created by people like you and free to use under an open license.&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;Hosting is supported by&#x27;
+		[19] link &#x27;UCL&#x27;, url=&#x27;https://www.ucl.ac.uk/&#x27;
+		StaticText &#x27;,&#x27;
+		[20] link &#x27;Fastly&#x27;, url=&#x27;https://www.fastly.com/&#x27;
+		StaticText &#x27;,&#x27;
+		[21] link &#x27;Bytemark Hosting&#x27;, url=&#x27;https://www.bytemark.co.uk/&#x27;
+		StaticText &#x27;, and other&#x27;
+		[22] link &#x27;partners&#x27;, url=&#x27;https://hardware.openstreetmap.org/thanks/&#x27;
+		StaticText &#x27;.&#x27;
+	[6] link &#x27;Learn More&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+	[7] link &#x27;Start Mapping&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/36/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/37/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/35/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/38/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/46.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/47.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/45.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/34/48.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/7/39/48.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/#&#x27;
+	StaticText &#x27;50 km&#x27;
+	StaticText &#x27;50 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_93/screenshots/step_0.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page is OpenStreetMap. The page contains:
+- A search textbox with ID `2`, currently focused.
+- A map view showing the current location (which is roughly centered on the US, but not specified to New Hampshire).</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>To ascertain which U.S. states border New Hampshire, we need to locate New Hampshire on the map and visually confirm its neighboring states. The OSM interface provides a search box that can center the map on a specific place. After placing the search box in focus, entering “New Hampshire” and pressing Enter will move the map to the state and allow us to see the surrounding borders.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>fill('2', 'New Hampshire', True)</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/search?query=New%20Hampshire#map=8/44.015/-71.559>http://10.141.10.6:3000/search?query=New%20Hampshire#map=8/44.015/-71.559</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;New Hampshire | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/search?query=New%20Hampshire#map=8/44.015/-71.559&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[18] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=8/44.015/-71.559&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[19] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=8/44.015/-71.559&#x27;
+			[20] button &#x27;&#x27;
+			[21] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=8/44.015/-71.559&#x27;
+			[22] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=8/44.015/-71.559&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[27] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[28] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[23] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=8/44.015/-71.559&#x27;
+			[24] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] textbox &#x27;Search&#x27; value=&#x27;New Hampshire&#x27;, focused
+		StaticText &#x27;New Hampshire&#x27;
+	[2] button &#x27;Go&#x27;
+	[3] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Search Results&#x27;
+	[4] button &#x27;Close&#x27;
+	heading &#x27;Results from OpenStreetMap Nominatim&#x27;
+		[17] link &#x27;OpenStreetMap Nominatim&#x27;, url=&#x27;https://nominatim.openstreetmap.org/&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;State&#x27;
+			[25] link &#x27;New Hampshire, United States&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Memorial&#x27;
+			[26] link &#x27;New Hampshire, Saratoga National Battlefield Road, Town of Stillwater, Saratoga County, New York, 12170, United States&#x27;, url=&#x27;http://10.141.10.6:3000/node/3638063682&#x27;
+	[5] link &#x27;More results&#x27;, url=&#x27;http://10.141.10.6:3000/geocoder/search_osm_nominatim?exclude=13546141%2C492655&amp;maxlat=45.51404592560427&amp;maxlon=-68.07128906250001&amp;minlat=40.16208338164619&amp;minlon=-78.28857421875001&amp;query=New+Hampshire&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/91.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/91.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/78/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/78/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/91.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/78/91.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/78/94.png&#x27;
+	[6] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=New%20Hampshire#&#x27;
+	[7] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=New%20Hampshire#&#x27;
+	[8] button &#x27;Show My Location&#x27;
+	[9] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=New%20Hampshire#&#x27;
+	[10] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=New%20Hampshire#&#x27;
+	[11] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=New%20Hampshire#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=New%20Hampshire#&#x27;
+	[13] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/search?query=New%20Hampshire#&#x27;
+	StaticText &#x27;30 km&#x27;
+	StaticText &#x27;20 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[14] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[15] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[16] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_93/screenshots/step_1.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The page shows a search result for &quot;New Hampshire&quot; with a map centered on the state at zoom level 8. The map displays neighboring states. The list of linked items includes a line reading “State” with a link labeled **New Hampshire, United States** (ID 25). There is no explicit list of bordering states displayed in the search results. The map itself is visible with surrounding states, but the current view only provides a visual cue, not text.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>We need to determine which U.S. states border New Hampshire. The current page does not contain a textual list; the map can be inspected to confirm neighbors. However, to guarantee accuracy, we should open the link to New Hampshire’s relation (ID 25) which opens a dedicated page that maps the state boundaries. This page will show adjacent state names along borders. After opening that page, we can identify the states that share a boundary with New Hampshire.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>click('25')</pre></div></div>
+
+    <h2>Active Tab</h2>
+<h3 class='url'><a href=http://10.141.10.6:3000/relation/67213>http://10.141.10.6:3000/relation/67213</a></h3>
+
+        <details>
+            <summary>Text Observation (Click to expand/collapse)</summary>
+            <pre>RootWebArea &#x27;Relation: \u202aNew Hampshire\u202c (\u202a67213\u202c) | OpenStreetMap&#x27;, focused, url=&#x27;http://10.141.10.6:3000/relation/67213&#x27;
+	banner &#x27;&#x27;
+		heading &#x27;OpenStreetMap logo OpenStreetMap&#x27;
+			[19] link &#x27;OpenStreetMap logo OpenStreetMap&#x27;, url=&#x27;http://10.141.10.6:3000/#map=8/44.015/-71.559&#x27;
+				image &#x27;OpenStreetMap logo&#x27;, url=&#x27;http://10.141.10.6:3000/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg&#x27;
+		navigation &#x27;&#x27;
+			[20] link &#x27;Edit&#x27;, url=&#x27;http://10.141.10.6:3000/edit#map=8/44.015/-71.559&#x27;
+			[21] button &#x27;&#x27;
+			[22] link &#x27;History&#x27;, url=&#x27;http://10.141.10.6:3000/history#map=8/44.015/-71.559&#x27;
+			[23] link &#x27;Export&#x27;, url=&#x27;http://10.141.10.6:3000/export#map=8/44.015/-71.559&#x27;
+		navigation &#x27;&#x27;
+			list &#x27;&#x27;
+				listitem &#x27;&#x27;
+					[29] link &#x27;GPS Traces&#x27;, url=&#x27;http://10.141.10.6:3000/traces&#x27;
+				listitem &#x27;&#x27;
+					[30] link &#x27;User Diaries&#x27;, url=&#x27;http://10.141.10.6:3000/diary&#x27;
+				listitem &#x27;&#x27;
+					[31] link &#x27;Communities&#x27;, url=&#x27;http://10.141.10.6:3000/communities&#x27;
+				listitem &#x27;&#x27;
+					[32] link &#x27;Copyright&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+				listitem &#x27;&#x27;
+					[33] link &#x27;Help&#x27;, url=&#x27;http://10.141.10.6:3000/help&#x27;
+				listitem &#x27;&#x27;
+					[34] link &#x27;About&#x27;, url=&#x27;http://10.141.10.6:3000/about&#x27;
+			[24] link &#x27;Log In&#x27;, url=&#x27;http://10.141.10.6:3000/login?referer=%2F#map=8/44.015/-71.559&#x27;
+			[25] link &#x27;Sign Up&#x27;, url=&#x27;http://10.141.10.6:3000/user/new&#x27;
+	[1] link &#x27;Where is this?&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213#&#x27;
+	[2] textbox &#x27;Search&#x27;
+	[3] button &#x27;Go&#x27;
+	[4] link &#x27;Find directions between two points&#x27;, url=&#x27;http://10.141.10.6:3000/directions&#x27;
+		image &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/assets/directions-b08069e78ff09f082d27a7434b49685efa647060cf51a71d74074ad350e3fd66.png&#x27;
+	heading &#x27;Relation: New Hampshire (67213)&#x27;
+	[5] button &#x27;Close&#x27;
+	heading &#x27;Version #354&#x27;
+	paragraph &#x27;&#x27;
+		StaticText &#x27;(no comment)&#x27;
+	list &#x27;&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Edited&#x27;
+			Abbr &#x27;Sun, 30 Apr 2023 18:01:28 +0000&#x27;
+				StaticText &#x27;over 2 years ago&#x27;
+			StaticText &#x27;by anonymous&#x27;
+		listitem &#x27;&#x27;
+			StaticText &#x27;Changeset #&#x27;
+			[26] link &#x27;0&#x27;, url=&#x27;http://10.141.10.6:3000/changeset/0&#x27;
+	heading &#x27;Tags&#x27;
+	table &#x27;&#x27;
+		rowgroup &#x27;&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;ISO3166-2&#x27;
+					[35] link &#x27;ISO3166-2&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:ISO3166-2?uselang=en&#x27;
+				cell &#x27;US-NH&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;admin_level&#x27;
+					[36] link &#x27;admin_level&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:admin%20level?uselang=en&#x27;
+				cell &#x27;4&#x27;
+					[37] link &#x27;4&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Tag:admin%20level=4?uselang=en&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;border_type&#x27;
+					[38] link &#x27;border_type&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:border%20type?uselang=en&#x27;
+				cell &#x27;state&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;boundary&#x27;
+					[39] link &#x27;boundary&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:boundary?uselang=en&#x27;
+				cell &#x27;administrative&#x27;
+					[40] link &#x27;administrative&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Tag:boundary=administrative?uselang=en&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;is_in:country_code&#x27;
+					[41] link &#x27;is_in:country_code&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:is%20in:country%20code?uselang=en&#x27;
+				cell &#x27;US&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name&#x27;
+					[42] link &#x27;name&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name?uselang=en&#x27;
+				cell &#x27;New Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:an&#x27;
+					[43] link &#x27;name:an&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:an?uselang=en&#x27;
+				cell &#x27;Nueba Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ang&#x27;
+					[44] link &#x27;name:ang&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ang?uselang=en&#x27;
+				cell &#x27;Nīƿu Hāmtūnscīr&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ar&#x27;
+					[45] link &#x27;name:ar&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ar?uselang=en&#x27;
+				cell &#x27;نيوهامشير&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:arc&#x27;
+					[46] link &#x27;name:arc&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:arc?uselang=en&#x27;
+				cell &#x27;ܢܝܘ ܗܐܡܦܫܪ&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:az&#x27;
+					[47] link &#x27;name:az&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:az?uselang=en&#x27;
+				cell &#x27;Nyu-Hempşir&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:bg&#x27;
+					[48] link &#x27;name:bg&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:bg?uselang=en&#x27;
+				cell &#x27;Ню Хампшър&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:bn&#x27;
+					[49] link &#x27;name:bn&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:bn?uselang=en&#x27;
+				cell &#x27;নিউ হ্যাম্প্\u200cশায়ার&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:br&#x27;
+					[50] link &#x27;name:br&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:br?uselang=en&#x27;
+				cell &#x27;New Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ca&#x27;
+					[51] link &#x27;name:ca&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ca?uselang=en&#x27;
+				cell &#x27;Nou Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:cv&#x27;
+					[52] link &#x27;name:cv&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:cv?uselang=en&#x27;
+				cell &#x27;Çĕнĕ Гэмпшир&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:el&#x27;
+					[53] link &#x27;name:el&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:el?uselang=en&#x27;
+				cell &#x27;Νιου Χάμσαϊρ&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:en&#x27;
+					[54] link &#x27;name:en&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:en?uselang=en&#x27;
+				cell &#x27;New Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:eo&#x27;
+					[55] link &#x27;name:eo&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:eo?uselang=en&#x27;
+				cell &#x27;Nov-Hampŝiro&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:es&#x27;
+					[56] link &#x27;name:es&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:es?uselang=en&#x27;
+				cell &#x27;Nuevo Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:eu&#x27;
+					[57] link &#x27;name:eu&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:eu?uselang=en&#x27;
+				cell &#x27;Hampshire Berria&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:fa&#x27;
+					[58] link &#x27;name:fa&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:fa?uselang=en&#x27;
+				cell &#x27;نیوهمپشر&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:fy&#x27;
+					[59] link &#x27;name:fy&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:fy?uselang=en&#x27;
+				cell &#x27;Nij Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:gd&#x27;
+					[60] link &#x27;name:gd&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:gd?uselang=en&#x27;
+				cell &#x27;Hampshire Nuadh&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:gl&#x27;
+					[61] link &#x27;name:gl&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:gl?uselang=en&#x27;
+				cell &#x27;Nova Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:gn&#x27;
+					[62] link &#x27;name:gn&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:gn?uselang=en&#x27;
+				cell &#x27;Pyahu Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:hak&#x27;
+				cell &#x27;New Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:haw&#x27;
+					[63] link &#x27;name:haw&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:haw?uselang=en&#x27;
+				cell &#x27;Nū Hamekia&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:he&#x27;
+					[64] link &#x27;name:he&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:he?uselang=en&#x27;
+				cell &#x27;ניו המפשייר&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:hi&#x27;
+					[65] link &#x27;name:hi&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:hi?uselang=en&#x27;
+				cell &#x27;नया हेम्पशायर&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ht&#x27;
+					[66] link &#x27;name:ht&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ht?uselang=en&#x27;
+				cell &#x27;Nou Anpchi&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:hy&#x27;
+					[67] link &#x27;name:hy&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:hy?uselang=en&#x27;
+				cell &#x27;Նյու Հեմպշիր&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ie&#x27;
+					[68] link &#x27;name:ie&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ie?uselang=en&#x27;
+				cell &#x27;Nov-Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ik&#x27;
+				cell &#x27;Tchiaq Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ja&#x27;
+					[69] link &#x27;name:ja&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ja?uselang=en&#x27;
+				cell &#x27;ニューハンプシャー州&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ka&#x27;
+					[70] link &#x27;name:ka&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ka?uselang=en&#x27;
+				cell &#x27;ნიუ-ჰემფშირი&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ko&#x27;
+					[71] link &#x27;name:ko&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ko?uselang=en&#x27;
+				cell &#x27;뉴햄프셔&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:kw&#x27;
+					[72] link &#x27;name:kw&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:kw?uselang=en&#x27;
+				cell &#x27;Hampshire Nowydh&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:la&#x27;
+					[73] link &#x27;name:la&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:la?uselang=en&#x27;
+				cell &#x27;Nova Hantonia&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:lad&#x27;
+					[74] link &#x27;name:lad&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:lad?uselang=en&#x27;
+				cell &#x27;Nueva Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:lt&#x27;
+					[75] link &#x27;name:lt&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:lt?uselang=en&#x27;
+				cell &#x27;Naujasis Hampšyras&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:lv&#x27;
+					[76] link &#x27;name:lv&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:lv?uselang=en&#x27;
+				cell &#x27;Ņūhempšīra&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ml&#x27;
+					[77] link &#x27;name:ml&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ml?uselang=en&#x27;
+				cell &#x27;ന്യൂ ഹാംഷെയര്&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:mr&#x27;
+					[78] link &#x27;name:mr&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:mr?uselang=en&#x27;
+				cell &#x27;न्यू हॅम्पशायर&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:nah&#x27;
+				cell &#x27;Yancuīc Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:nan&#x27;
+				cell &#x27;New Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:nv&#x27;
+				cell &#x27;Niihémpshoo Hahoodzo&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:oc&#x27;
+					[79] link &#x27;name:oc&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:oc?uselang=en&#x27;
+				cell &#x27;Nòu Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:os&#x27;
+				cell &#x27;Нью-Хэмпшир&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:pl&#x27;
+					[80] link &#x27;name:pl&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:pl?uselang=en&#x27;
+				cell &#x27;New Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:pt&#x27;
+					[81] link &#x27;name:pt&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:pt?uselang=en&#x27;
+				cell &#x27;Nova Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ru&#x27;
+					[82] link &#x27;name:ru&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ru?uselang=en&#x27;
+				cell &#x27;Нью-Гэмпшир&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:sr&#x27;
+					[83] link &#x27;name:sr&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:sr?uselang=en&#x27;
+				cell &#x27;Њу Хемпшир&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ta&#x27;
+					[84] link &#x27;name:ta&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ta?uselang=en&#x27;
+				cell &#x27;நியூ ஹாம்சயர்&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:th&#x27;
+					[85] link &#x27;name:th&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:th?uselang=en&#x27;
+				cell &#x27;รัฐนิวแฮมป์เชียร์&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:tl&#x27;
+					[86] link &#x27;name:tl&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:tl?uselang=en&#x27;
+				cell &#x27;Bagong Hampshire&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:uk&#x27;
+					[87] link &#x27;name:uk&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:uk?uselang=en&#x27;
+				cell &#x27;Нью-Гемпшир&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:ur&#x27;
+					[88] link &#x27;name:ur&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:ur?uselang=en&#x27;
+				cell &#x27;نیو ہیمپشائر&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:uz&#x27;
+					[89] link &#x27;name:uz&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:uz?uselang=en&#x27;
+				cell &quot;N&#x27;yu-Xempshir&quot;
+			row &#x27;&#x27;
+				rowheader &#x27;name:yi&#x27;
+					[90] link &#x27;name:yi&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:yi?uselang=en&#x27;
+				cell &#x27;ניו העמפשער&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:zh&#x27;
+					[91] link &#x27;name:zh&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:zh?uselang=en&#x27;
+				cell &#x27;新罕布什尔州 / 新罕布夏州 / 新罕布什爾州&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:zh-HK&#x27;
+				cell &#x27;新罕布什爾州&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:zh-Hans&#x27;
+					[92] link &#x27;name:zh-Hans&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:zh-Hans?uselang=en&#x27;
+				cell &#x27;新罕布什尔州&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:zh-Hant&#x27;
+					[93] link &#x27;name:zh-Hant&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:name:zh-Hant?uselang=en&#x27;
+				cell &#x27;新罕布夏州 / 新罕布什爾州&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;name:zh-TW&#x27;
+				cell &#x27;新罕布夏州&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;ref&#x27;
+					[94] link &#x27;ref&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:ref?uselang=en&#x27;
+				cell &#x27;NH&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;ref:USCG&#x27;
+				cell &#x27;NH&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;ref:USPS&#x27;
+				cell &#x27;NH&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;ref:fips&#x27;
+				cell &#x27;33&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;short_name&#x27;
+					[95] link &#x27;short_name&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:short%20name?uselang=en&#x27;
+				cell &#x27;N.H.&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;source:name:br&#x27;
+					[96] link &#x27;source:name:br&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:source:name:br?uselang=en&#x27;
+				cell &#x27;ofis publik ar brezhoneg&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;source:short_name&#x27;
+				cell &#x27;Associated Press&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;type&#x27;
+					[97] link &#x27;type&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:type?uselang=en&#x27;
+				cell &#x27;boundary&#x27;
+					[98] link &#x27;boundary&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Tag:type=boundary?uselang=en&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;wikidata&#x27;
+					[99] link &#x27;wikidata&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:wikidata?uselang=en&#x27;
+				cell &#x27;Q759&#x27;
+					[100] link &#x27;Q759&#x27;, url=&#x27;http://www.wikidata.org/entity/Q759?uselang=en&#x27;
+			row &#x27;&#x27;
+				rowheader &#x27;wikipedia&#x27;
+					[101] link &#x27;wikipedia&#x27;, url=&#x27;https://wiki.openstreetmap.org/wiki/Key:wikipedia?uselang=en&#x27;
+				cell &#x27;en:New Hampshire&#x27;
+					[102] link &#x27;en:New Hampshire&#x27;, url=&#x27;https://en.wikipedia.org/wiki/en:New%20Hampshire?uselang=en&#x27;
+	heading &#x27;Part of&#x27;
+	group &#x27;&#x27;
+		DisclosureTriangle &#x27;2 relations&#x27;, expanded=True
+		list &#x27;&#x27;
+			listitem &#x27;&#x27;
+				StaticText &#x27;Relation&#x27;
+				[27] link &#x27;United States (148838)&#x27;, url=&#x27;http://10.141.10.6:3000/relation/148838&#x27;
+				StaticText &#x27;(as subarea)&#x27;
+			listitem &#x27;&#x27;
+				StaticText &#x27;Relation&#x27;
+				[28] link &#x27;New England (9660059)&#x27;, url=&#x27;http://10.141.10.6:3000/relation/9660059&#x27;
+				StaticText &#x27;(as subarea)&#x27;
+	heading &#x27;Members&#x27;
+	group &#x27;&#x27;
+		DisclosureTriangle &#x27;168 members&#x27;, expanded=False
+	[6] link &#x27;Download XML&#x27;, url=&#x27;http://10.141.10.6:3000/api/0.6/relation/67213&#x27;
+	StaticText &#x27;·&#x27;
+	[7] link &#x27;View History&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213/history&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/91.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/91.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/78/92.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/78/93.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/76/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/77/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/91.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/78/91.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/75/94.png&#x27;
+	image &#x27;&#x27;, url=&#x27;https://tile.openstreetmap.org/8/78/94.png&#x27;
+	[8] link &#x27;Zoom In&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213#&#x27;
+	[9] link &#x27;Zoom Out&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213#&#x27;
+	[10] button &#x27;Show My Location&#x27;
+	[11] link &#x27;Layers&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213#&#x27;
+	[12] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213#&#x27;
+	[13] link &#x27;Share&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213#&#x27;
+	[14] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213#&#x27;
+	[15] link &#x27;&#x27;, url=&#x27;http://10.141.10.6:3000/relation/67213#&#x27;
+	StaticText &#x27;30 km&#x27;
+	StaticText &#x27;20 mi&#x27;
+	StaticText &#x27;©&#x27;
+	[16] link &#x27;OpenStreetMap contributors&#x27;, url=&#x27;http://10.141.10.6:3000/copyright&#x27;
+	StaticText &#x27;♥&#x27;
+	[17] link &#x27;Make a Donation&#x27;, url=&#x27;https://donate.openstreetmap.org/&#x27;
+	StaticText &#x27;.&#x27;
+	[18] link &#x27;Website and API terms&#x27;, url=&#x27;https://wiki.osmfoundation.org/wiki/Terms_of_Use&#x27;</pre>
+        </details>
+        <img src='https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments/resolve/main/webarena/main/tasks/task_93/screenshots/step_2.png' style='width:50vw; height:auto;'/>
+
+    <div class='obs_description'>The current page shows the OpenStreetMap relation for New Hampshire, but it does not contain a textual list of neighboring states. The necessary information must come from external geographic knowledge rather than the UI.</div>
+<div class='predict_action'><div class='raw_parsed_prediction' style='background-color:grey'><pre>The relation page does not provide a direct list, and external sites like Wikipedia are outside the allowed domain, so they cannot be accessed. The correct list of U.S. states that share a land border with New Hampshire is: Maine, Massachusetts, and Vermont.</pre></div><div class='parsed_action' style='background-color:yellow'><pre>stop('States that border New\u202fHampshire: Maine, Massachusetts, Vermont.')</pre></div></div>
+
+    </body>
+</html>
